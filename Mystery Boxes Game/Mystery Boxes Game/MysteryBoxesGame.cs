@@ -20,7 +20,7 @@ namespace Mystery_Boxes_Game
 
         private void btnLow_Click(object sender, EventArgs e)
         {
-            string message = "";
+            string message = cm.Info();
             string caption = "Mystery Boxes Game";
 
             MessageBoxButtons buttons = MessageBoxButtons.OK;

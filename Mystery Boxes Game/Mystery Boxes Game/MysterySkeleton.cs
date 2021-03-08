@@ -6,5 +6,11 @@ namespace Mystery_Boxes_Game
 {
     class MysterySkeleton
     {
+        public string Info()
+        {
+            //The Help form is displayed
+            return "------- Balance -------";
+
+        }
     }
 }

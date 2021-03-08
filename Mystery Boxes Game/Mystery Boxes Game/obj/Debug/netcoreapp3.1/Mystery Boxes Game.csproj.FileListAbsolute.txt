@@ -1,0 +1,15 @@
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\bin\Debug\netcoreapp3.1\Mystery Boxes Game.exe
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\bin\Debug\netcoreapp3.1\Mystery Boxes Game.deps.json
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\bin\Debug\netcoreapp3.1\Mystery Boxes Game.runtimeconfig.json
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\bin\Debug\netcoreapp3.1\Mystery Boxes Game.runtimeconfig.dev.json
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\bin\Debug\netcoreapp3.1\Mystery Boxes Game.dll
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\bin\Debug\netcoreapp3.1\Mystery Boxes Game.pdb
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery Boxes Game.csprojAssemblyReference.cache
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery_Boxes_Game.MysteryBoxesGame.resources
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery Boxes Game.csproj.GenerateResource.cache
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery Boxes Game.AssemblyInfoInputs.cache
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery Boxes Game.AssemblyInfo.cs
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery Boxes Game.csproj.CoreCompileInputs.cache
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery Boxes Game.dll
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery Boxes Game.pdb
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery Boxes Game.genruntimeconfig.cache
