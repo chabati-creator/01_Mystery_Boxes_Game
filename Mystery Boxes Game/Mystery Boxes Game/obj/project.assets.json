@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\Mystery Boxes Game\\Mystery Boxes Game.csproj",
+      "projectUniqueName": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\01_Mystery_Boxes_Game\\Mystery Boxes Game\\Mystery Boxes Game\\Mystery Boxes Game.csproj",
       "projectName": "Mystery Boxes Game",
-      "projectPath": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\Mystery Boxes Game\\Mystery Boxes Game.csproj",
+      "projectPath": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\01_Mystery_Boxes_Game\\Mystery Boxes Game\\Mystery Boxes Game\\Mystery Boxes Game.csproj",
       "packagesPath": "C:\\Users\\batis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\Mystery Boxes Game\\obj\\",
+      "outputPath": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\01_Mystery_Boxes_Game\\Mystery Boxes Game\\Mystery Boxes Game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\batis\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\Mystery Boxes Game\\Mystery Boxes Game.csproj": {}
+    "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\01_Mystery_Boxes_Game\\Mystery Boxes Game\\Mystery Boxes Game\\MysteryBoxesGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\Mystery Boxes Game\\Mystery Boxes Game.csproj": {
+    "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\01_Mystery_Boxes_Game\\Mystery Boxes Game\\Mystery Boxes Game\\MysteryBoxesGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\Mystery Boxes Game\\Mystery Boxes Game.csproj",
-        "projectName": "Mystery Boxes Game",
-        "projectPath": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\Mystery Boxes Game\\Mystery Boxes Game.csproj",
+        "projectUniqueName": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\01_Mystery_Boxes_Game\\Mystery Boxes Game\\Mystery Boxes Game\\MysteryBoxesGame.csproj",
+        "projectName": "MysteryBoxesGame",
+        "projectPath": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\01_Mystery_Boxes_Game\\Mystery Boxes Game\\Mystery Boxes Game\\MysteryBoxesGame.csproj",
         "packagesPath": "C:\\Users\\batis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\Mystery Boxes Game\\obj\\",
+        "outputPath": "C:\\Users\\batis\\source\\repos\\Mystery Boxes Game\\01_Mystery_Boxes_Game\\Mystery Boxes Game\\Mystery Boxes Game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\batis\\AppData\\Roaming\\NuGet\\NuGet.Config",
