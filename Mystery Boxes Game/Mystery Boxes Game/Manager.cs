@@ -4,13 +4,19 @@ using System.Text;
 
 namespace Mystery_Boxes_Game
 {
-    class MysterySkeleton
+    class Manager
     {
-        public string Info()
+
+        private static List<Balance> StartAmount = new List<Balance>();
+
+        public string Input(List<int> a)
         {
             //The Help form is displayed
             return "------- Balance -------";
 
+           
+
         }
+
     }
 }
