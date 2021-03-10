@@ -10,27 +10,26 @@ using System.Windows.Forms;
 
 namespace Mystery_Boxes_Game
 {
-    public partial class MysteryBoxesGame : Form
+    public partial class Start : Form
     {
-        Manager cm = new Manager();
-        public MysteryBoxesGame()
+        Player cm = new Player();
+        public Start()
         {
             InitializeComponent();
         }
 
         private void btnLow_Click(object sender, EventArgs e)
         {
-            string message = cm.ClassSummary();
+            string message = "";
             if (message.Equals(""))
             {
-                message = "No students have been added to class";
+                message = "";
             }
 
             List<int> StartAmount = new List<int>();
 
             StartAmount.Add(Convert.ToInt32(nudLow.Value));
 
-            string message = cm.Input(amount);
             string caption = "Mystery Boxes Game";
 
             MessageBoxButtons buttons = MessageBoxButtons.OK;

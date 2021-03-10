@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Mystery_Boxes_Game
 {
-    class Balance
+    class MysteryBox
     {
         public string Low()
         {

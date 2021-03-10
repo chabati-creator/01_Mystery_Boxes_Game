@@ -1,7 +1,7 @@
 ﻿
 namespace Mystery_Boxes_Game
 {
-    partial class MysteryBoxesGame
+    partial class Start
     {
         /// <summary>
         ///  Required designer variable.
@@ -32,6 +32,9 @@ namespace Mystery_Boxes_Game
             this.lblHeading = new System.Windows.Forms.Label();
             this.btnLow = new System.Windows.Forms.Button();
             this.nudLow = new System.Windows.Forms.NumericUpDown();
+            this.tbxName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblInstruction = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudLow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,7 +42,7 @@ namespace Mystery_Boxes_Game
             // 
             this.lblHeading.AutoSize = true;
             this.lblHeading.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHeading.Location = new System.Drawing.Point(67, 56);
+            this.lblHeading.Location = new System.Drawing.Point(41, 27);
             this.lblHeading.Name = "lblHeading";
             this.lblHeading.Size = new System.Drawing.Size(304, 37);
             this.lblHeading.TabIndex = 0;
@@ -48,7 +51,7 @@ namespace Mystery_Boxes_Game
             // btnLow
             // 
             this.btnLow.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLow.Location = new System.Drawing.Point(163, 191);
+            this.btnLow.Location = new System.Drawing.Point(188, 278);
             this.btnLow.Name = "btnLow";
             this.btnLow.Size = new System.Drawing.Size(106, 40);
             this.btnLow.TabIndex = 1;
@@ -59,21 +62,51 @@ namespace Mystery_Boxes_Game
             // nudLow
             // 
             this.nudLow.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nudLow.Location = new System.Drawing.Point(67, 124);
+            this.nudLow.Location = new System.Drawing.Point(144, 209);
             this.nudLow.Name = "nudLow";
-            this.nudLow.Size = new System.Drawing.Size(304, 34);
+            this.nudLow.Size = new System.Drawing.Size(191, 34);
             this.nudLow.TabIndex = 2;
             // 
-            // MysteryBoxesGame
+            // tbxName
+            // 
+            this.tbxName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxName.Location = new System.Drawing.Point(146, 159);
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(189, 30);
+            this.tbxName.TabIndex = 3;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblName.Location = new System.Drawing.Point(43, 163);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(70, 24);
+            this.lblName.TabIndex = 4;
+            this.lblName.Text = "Name:";
+            // 
+            // lblInstruction
+            // 
+            this.lblInstruction.Location = new System.Drawing.Point(43, 77);
+            this.lblInstruction.Name = "lblInstruction";
+            this.lblInstruction.Size = new System.Drawing.Size(421, 66);
+            this.lblInstruction.TabIndex = 5;
+            this.lblInstruction.Text = "Please enter a dollar amount (between $5 and $50) in the box below. Then chose th" +
+    "e stakes. The higher the stakes, the more you can win!";
+            // 
+            // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 386);
+            this.ClientSize = new System.Drawing.Size(489, 364);
+            this.Controls.Add(this.lblInstruction);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.tbxName);
             this.Controls.Add(this.nudLow);
             this.Controls.Add(this.btnLow);
             this.Controls.Add(this.lblHeading);
-            this.Name = "MysteryBoxesGame";
-            this.Text = "MysteryBoxesGame";
+            this.Name = "Start";
+            this.Text = "Mystery Box Game";
             ((System.ComponentModel.ISupportInitialize)(this.nudLow)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -85,6 +118,9 @@ namespace Mystery_Boxes_Game
         private System.Windows.Forms.Label lblHeading;
         private System.Windows.Forms.Button btnLow;
         private System.Windows.Forms.NumericUpDown nudLow;
+        private System.Windows.Forms.TextBox tbxName;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblInstruction;
     }
 }
 
