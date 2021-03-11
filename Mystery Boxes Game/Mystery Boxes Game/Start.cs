@@ -20,16 +20,13 @@ namespace Mystery_Boxes_Game
 
         private void btnLow_Click(object sender, EventArgs e)
         {
-            string message = "";
-            if (message.Equals(""))
-            {
-                message = "";
-            }
+            string name = txbName.Text;
 
-            List<int> StartAmount = new List<int>();
+            List<int> amount = new List<int>();
 
-            StartAmount.Add(Convert.ToInt32(nudLow.Value));
+            amount.Add(Convert.ToInt32(nudAmount.Value));
 
+            string message = cm.AddPlayer(name, amount);
             string caption = "Mystery Boxes Game";
 
             MessageBoxButtons buttons = MessageBoxButtons.OK;

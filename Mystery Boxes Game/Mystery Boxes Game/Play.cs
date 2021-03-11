@@ -14,5 +14,6 @@ namespace Mystery_Boxes_Game
         {
             InitializeComponent();
         }
+
     }
 }

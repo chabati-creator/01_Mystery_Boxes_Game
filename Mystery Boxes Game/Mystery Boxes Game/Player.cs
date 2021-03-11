@@ -7,15 +7,18 @@ namespace Mystery_Boxes_Game
     class Player
     {
 
-        private static List<MysteryBox> StartAmount = new List<MysteryBox>();
-
-        public string Input(List<int> a)
+        private static List<Player> players = new List<Player>();
+        public Player()
         {
-            //The Help form is displayed
-            return "------- Balance -------";
 
-           
+        }
 
+        public string AddPlayer(string n, List<int> a)
+        {
+            players.Add(new Player(n, a));
+
+            return players.Gamestats();
+                
         }
 
     }
