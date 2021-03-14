@@ -12,7 +12,7 @@ namespace Mystery_Boxes_Game
 {
     public partial class Start : Form
     {
-        Player cm = new Player();
+        MysteryBox cm = new MysteryBox();
         public Start()
         {
             InitializeComponent();

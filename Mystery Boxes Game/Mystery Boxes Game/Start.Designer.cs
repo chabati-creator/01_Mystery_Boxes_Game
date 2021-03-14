@@ -91,8 +91,8 @@ namespace Mystery_Boxes_Game
             this.lblInstruction.Name = "lblInstruction";
             this.lblInstruction.Size = new System.Drawing.Size(412, 66);
             this.lblInstruction.TabIndex = 5;
-            this.lblInstruction.Text = "Please enter a dollar amount (between $5 and $50) in the box below. Then choose t" +
-    "he stakes. The higher the stakes, the more you can win!";
+            this.lblInstruction.Text = "Please enter your name and a dollar amount (between $5 and $50) in the boxes belo" +
+    "w. Then choose the stakes. The higher the stakes, the more you can win!";
             // 
             // Start
             // 

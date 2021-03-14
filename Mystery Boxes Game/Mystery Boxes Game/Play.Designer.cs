@@ -54,9 +54,9 @@ namespace Mystery_Boxes_Game
             // 
             this.lblInstruction.Location = new System.Drawing.Point(43, 79);
             this.lblInstruction.Name = "lblInstruction";
-            this.lblInstruction.Size = new System.Drawing.Size(388, 29);
+            this.lblInstruction.Size = new System.Drawing.Size(388, 42);
             this.lblInstruction.TabIndex = 6;
-            this.lblInstruction.Text = "Click the play button to reveal the contents of the boxes";
+            this.lblInstruction.Text = "Click the \'Open Boxes\' button to reveal the contents of the boxes";
             // 
             // btnOpenBoxes
             // 

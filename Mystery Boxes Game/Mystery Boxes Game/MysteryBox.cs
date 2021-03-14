@@ -6,25 +6,18 @@ namespace Mystery_Boxes_Game
 {
     class MysteryBox
     {
-        private string name;
-        private List<int> amount = new List<int>();
+        private static List<Player> players = new List<Player>();
 
-        //The constuctor is a method that allows you to create an object of the class
-        public Player(string n, List<int> a)
+        public MysteryBox()
         {
-            name = n;
-            amount = a;
-
-            ;
 
         }
-        public string Gamestats()
+
+        public string AddPlayer(string n, List<int> a)
         {
-            string summary;
+            players.Add(new Player(n, a));
 
-            summary = "5-Mark average: ";
-
-            return summary;
+            return n;
         }
     }
 }
