@@ -17,7 +17,7 @@ namespace Mystery_Boxes_Game
         {
             players.Add(new Player(n, a));
 
-            return n;
+            return players[players.Count - 1].PlayerSummary();
         }
     }
 }
