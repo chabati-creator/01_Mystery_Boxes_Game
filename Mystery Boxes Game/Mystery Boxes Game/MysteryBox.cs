@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Mystery_Boxes_Game
 {
-    class MysteryBox
+    public class MysteryBox
     {
         private static List<Player> players = new List<Player>();
 
@@ -13,7 +13,7 @@ namespace Mystery_Boxes_Game
 
         }
 
-        public string AddPlayer(string n, List<int> a)
+        public string AddPlayer(string n, int a)
         {
             players.Add(new Player(n, a));
 

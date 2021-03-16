@@ -22,9 +22,7 @@ namespace Mystery_Boxes_Game
         {
             string name = txbName.Text;
 
-            List<int> amount = new List<int>();
-
-            amount.Add(Convert.ToInt32(nudAmount.Value));
+            int amount = Convert.ToInt32(nudAmount.Value);
 
             string message = cm.AddPlayer(name, amount);
             string caption = "Mystery Boxes Game";
@@ -34,6 +32,11 @@ namespace Mystery_Boxes_Game
 
             // Displays the MessageBox which inlcudes the message and caption. 
             result = MessageBox.Show(message, caption, buttons);
+
+            this.Hide();
+            Play window = new Play(cm);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
 
     }

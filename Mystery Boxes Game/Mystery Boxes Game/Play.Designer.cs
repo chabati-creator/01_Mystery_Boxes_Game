@@ -75,6 +75,7 @@ namespace Mystery_Boxes_Game
             this.pb1.Size = new System.Drawing.Size(119, 80);
             this.pb1.TabIndex = 11;
             this.pb1.TabStop = false;
+            this.pb1.Click += new System.EventHandler(this.pb1_Click);
             // 
             // pb2
             // 

@@ -63,9 +63,24 @@ namespace Mystery_Boxes_Game
             // 
             this.nudAmount.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nudAmount.Location = new System.Drawing.Point(144, 209);
+            this.nudAmount.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.nudAmount.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.nudAmount.Name = "nudAmount";
             this.nudAmount.Size = new System.Drawing.Size(191, 34);
             this.nudAmount.TabIndex = 2;
+            this.nudAmount.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             // 
             // txbName
             // 

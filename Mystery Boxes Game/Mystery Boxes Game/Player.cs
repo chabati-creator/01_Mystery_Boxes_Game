@@ -6,25 +6,16 @@ namespace Mystery_Boxes_Game
 {
     class Player
     {
+        private int amount;
         private string name;
         private List<int> amounts = new List<int>();
 
         //The constuctor is a method that allows you to create an object of the class
-        public Player(string n, List<int> a)
+        public Player(string n, int a)
         {
             name = n;
-            amounts = a;
+            amount = a;
 
-            AnalyseAmount();
-
-        }
-        public string AnalyseAmount()
-        {
-            string summary;
-
-            summary = "";
-
-            return summary;
         }
 
         public float Amount()
@@ -44,7 +35,7 @@ namespace Mystery_Boxes_Game
         {
             string summary;
 
-            summary = "Name: " + name + "\n" + "Amount: s" + Amount();  //Output the name and the amount to the user when the button is clicked
+            summary = "Name: " + name + "\n" + "Amount: " + amount;  //Output the name and the amount to the user when the button is clicked
 
             return summary;
         }

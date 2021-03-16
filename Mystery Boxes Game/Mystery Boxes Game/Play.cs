@@ -10,10 +10,16 @@ namespace Mystery_Boxes_Game
 {
     public partial class Play : Form
     {
-        public Play()
+        MysteryBox mb = new MysteryBox();
+        public Play(MysteryBox m)
         {
+            mb = m;
             InitializeComponent();
         }
 
+        private void pb1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
