@@ -29,6 +29,7 @@ namespace Mystery_Boxes_Game
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Play));
             this.lblHeading = new System.Windows.Forms.Label();
             this.lblInstruction = new System.Windows.Forms.Label();
             this.btnOpenBoxes = new System.Windows.Forms.Button();
@@ -61,43 +62,46 @@ namespace Mystery_Boxes_Game
             // btnOpenBoxes
             // 
             this.btnOpenBoxes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnOpenBoxes.Location = new System.Drawing.Point(150, 221);
+            this.btnOpenBoxes.Location = new System.Drawing.Point(155, 251);
             this.btnOpenBoxes.Name = "btnOpenBoxes";
             this.btnOpenBoxes.Size = new System.Drawing.Size(169, 36);
             this.btnOpenBoxes.TabIndex = 10;
             this.btnOpenBoxes.Text = "Open Boxes";
             this.btnOpenBoxes.UseVisualStyleBackColor = true;
+            this.btnOpenBoxes.Click += new System.EventHandler(this.btnOpenBoxes_Click);
             // 
             // pb1
             // 
-            this.pb1.Location = new System.Drawing.Point(43, 124);
+            this.pb1.Image = ((System.Drawing.Image)(resources.GetObject("pb1.Image")));
+            this.pb1.Location = new System.Drawing.Point(57, 129);
             this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(119, 80);
+            this.pb1.Size = new System.Drawing.Size(107, 101);
             this.pb1.TabIndex = 11;
             this.pb1.TabStop = false;
-            this.pb1.Click += new System.EventHandler(this.pb1_Click);
             // 
             // pb2
             // 
-            this.pb2.Location = new System.Drawing.Point(171, 124);
+            this.pb2.Image = ((System.Drawing.Image)(resources.GetObject("pb2.Image")));
+            this.pb2.Location = new System.Drawing.Point(185, 129);
             this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(129, 80);
-            this.pb2.TabIndex = 12;
+            this.pb2.Size = new System.Drawing.Size(107, 101);
+            this.pb2.TabIndex = 14;
             this.pb2.TabStop = false;
             // 
             // pb3
             // 
-            this.pb3.Location = new System.Drawing.Point(310, 124);
+            this.pb3.Image = ((System.Drawing.Image)(resources.GetObject("pb3.Image")));
+            this.pb3.Location = new System.Drawing.Point(309, 129);
             this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(121, 80);
-            this.pb3.TabIndex = 13;
+            this.pb3.Size = new System.Drawing.Size(107, 101);
+            this.pb3.TabIndex = 15;
             this.pb3.TabStop = false;
             // 
             // Play
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 362);
+            this.ClientSize = new System.Drawing.Size(497, 336);
             this.Controls.Add(this.pb3);
             this.Controls.Add(this.pb2);
             this.Controls.Add(this.pb1);

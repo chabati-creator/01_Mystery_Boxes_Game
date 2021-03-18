@@ -12,9 +12,10 @@ namespace Mystery_Boxes_Game
 {
     public partial class Start : Form
     {
-        MysteryBox cm = new MysteryBox();
+        Player p;
         public Start()
         {
+            
             InitializeComponent();
         }
 
@@ -24,17 +25,20 @@ namespace Mystery_Boxes_Game
 
             int amount = Convert.ToInt32(nudAmount.Value);
 
-            string message = cm.AddPlayer(name, amount);
-            string caption = "Mystery Boxes Game";
+            p = new Player(name, amount);
 
-            MessageBoxButtons buttons = MessageBoxButtons.OK;
-            DialogResult result;
+            p.BuyBoxes(0);
+            //string caption = "Mystery Boxes Game";
 
-            // Displays the MessageBox which inlcudes the message and caption. 
-            result = MessageBox.Show(message, caption, buttons);
+            //MessageBoxButtons buttons = MessageBoxButtons.OK;
+            //DialogResult result;
 
+            //// Displays the MessageBox which inlcudes the message and caption. 
+            //result = MessageBox.Show(message, caption, buttons);
+
+            //The Start Screen closes and the Play screen opens
             this.Hide();
-            Play window = new Play(cm);
+            Play window = new Play(p);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }

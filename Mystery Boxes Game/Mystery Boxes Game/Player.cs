@@ -4,41 +4,51 @@ using System.Text;
 
 namespace Mystery_Boxes_Game
 {
-    class Player
+    public class Player
     {
         private int amount;
         private string name;
-        private List<int> amounts = new List<int>();
+        private MysteryBox [,] rounds = new MysteryBox [50,3];
+        private int roundCounter = 0;
 
         //The constuctor is a method that allows you to create an object of the class
         public Player(string n, int a)
         {
             name = n;
             amount = a;
-
+            System.Diagnostics.Debug.WriteLine(name+" "+amount);
         }
 
-        public float Amount()
+        public void BuyBoxes(int t)
         {
-            int sumAmount = 0;
-
-            foreach (int amount in amounts)
+            for (int i = 0; i < 3; i++)
             {
-                //Adding the amount won to the total amount
-                sumAmount += amount;
+                rounds[roundCounter, i] = new MysteryBox(t);
             }
-
-            return sumAmount;
+            roundCounter++;
         }
 
         public string PlayerSummary()  //Method to show the player summary
         {
             string summary;
 
-            summary = "Name: " + name + "\n" + "Amount: " + amount;  //Output the name and the amount to the user when the button is clicked
+            summary = "Name: " + name + "\n" + "Amount: $" + amount;  //Output the name and the amount to the user when the button is clicked
 
             return summary;
         }
+
+        //public float Amount()
+        //{
+        //    int sumAmount = 0;
+
+        //    foreach (int amount in amounts)
+        //    {
+        //        //Adding the amount won to the total amount
+        //        sumAmount += amount;
+        //    }
+
+        //    return sumAmount;
+        //}
 
     }
 }

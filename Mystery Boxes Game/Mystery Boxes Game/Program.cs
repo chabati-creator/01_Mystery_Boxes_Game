@@ -14,6 +14,8 @@ namespace Mystery_Boxes_Game
         [STAThread]
         static void Main()
         {
+            
+
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
