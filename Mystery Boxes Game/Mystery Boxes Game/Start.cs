@@ -38,7 +38,7 @@ namespace Mystery_Boxes_Game
 
             //The Start Screen closes and the Play screen opens
             this.Hide();
-            Play window = new Play(p);
+            Play window = new Play(p,0);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }

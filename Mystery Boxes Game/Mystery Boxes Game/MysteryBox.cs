@@ -10,8 +10,9 @@ namespace Mystery_Boxes_Game
         private List<int> SILVER = new List<int>() { 2, 4, 6 };
         private List<int> GOLD = new List<int>() { 3, 6, 9 };
 
+
         private int value;
-        private int type;
+        
 
         public MysteryBox()
         {
@@ -19,7 +20,7 @@ namespace Mystery_Boxes_Game
 
         public MysteryBox(int t)
         {
-            type = t;
+       
             if (t == 0)
             {
                 Random randint = new Random();
@@ -40,6 +41,11 @@ namespace Mystery_Boxes_Game
             }
         }
 
+        public int getValue()
+        {
+
+            return value;
+        }
 
         //public string AddPlayer(string n, int a)
         //{

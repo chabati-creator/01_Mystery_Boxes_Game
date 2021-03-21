@@ -28,6 +28,24 @@ namespace Mystery_Boxes_Game
             roundCounter++;
         }
 
+        public List<int> OpenBoxes()
+        {
+            List<int> values = new List<int>();
+
+            for (int i = 0; i < 3; i++)
+            {
+                values.Add(rounds[roundCounter - 1, i].getValue());
+            }
+
+            foreach (int value in values)
+            {
+                amount += value;
+            }
+
+   
+            return values;
+        }
+
         public string PlayerSummary()  //Method to show the player summary
         {
             string summary;
