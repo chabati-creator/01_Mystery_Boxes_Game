@@ -6,9 +6,9 @@ namespace Mystery_Boxes_Game
 {
     public class MysteryBox
     {
-        private List<int> BRONZE = new List<int>() { 0, 2, 3 };
+        private List<int> COPPER = new List<int>() { 1, 2, 3 };
         private List<int> SILVER = new List<int>() { 2, 4, 6 };
-        private List<int> GOLD = new List<int>() { 3, 6, 9 };
+        private List<int> GOLD = new List<int>() { 5, 10, 15 };
 
 
         private int value;
@@ -25,7 +25,7 @@ namespace Mystery_Boxes_Game
             {
                 Random randint = new Random();
                 int index = randint.Next(0, 3);
-                value = BRONZE[index];
+                value = COPPER[index];
             }
             else if (t == 1)
             {

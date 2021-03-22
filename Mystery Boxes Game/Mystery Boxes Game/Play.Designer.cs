@@ -36,6 +36,7 @@ namespace Mystery_Boxes_Game
             this.pbx1 = new System.Windows.Forms.PictureBox();
             this.pbx2 = new System.Windows.Forms.PictureBox();
             this.pbx3 = new System.Windows.Forms.PictureBox();
+            this.btnPlayAgain = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbx1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx3)).BeginInit();
@@ -45,7 +46,7 @@ namespace Mystery_Boxes_Game
             // 
             this.lblHeading.AutoSize = true;
             this.lblHeading.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHeading.Location = new System.Drawing.Point(43, 28);
+            this.lblHeading.Location = new System.Drawing.Point(50, 34);
             this.lblHeading.Name = "lblHeading";
             this.lblHeading.Size = new System.Drawing.Size(107, 37);
             this.lblHeading.TabIndex = 1;
@@ -53,7 +54,7 @@ namespace Mystery_Boxes_Game
             // 
             // lblInstruction
             // 
-            this.lblInstruction.Location = new System.Drawing.Point(43, 79);
+            this.lblInstruction.Location = new System.Drawing.Point(53, 76);
             this.lblInstruction.Name = "lblInstruction";
             this.lblInstruction.Size = new System.Drawing.Size(388, 42);
             this.lblInstruction.TabIndex = 6;
@@ -62,7 +63,7 @@ namespace Mystery_Boxes_Game
             // btnOpenBoxes
             // 
             this.btnOpenBoxes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnOpenBoxes.Location = new System.Drawing.Point(155, 251);
+            this.btnOpenBoxes.Location = new System.Drawing.Point(57, 249);
             this.btnOpenBoxes.Name = "btnOpenBoxes";
             this.btnOpenBoxes.Size = new System.Drawing.Size(169, 36);
             this.btnOpenBoxes.TabIndex = 10;
@@ -91,17 +92,28 @@ namespace Mystery_Boxes_Game
             // pbx3
             // 
             this.pbx3.Image = ((System.Drawing.Image)(resources.GetObject("pbx3.Image")));
-            this.pbx3.Location = new System.Drawing.Point(309, 129);
+            this.pbx3.Location = new System.Drawing.Point(310, 129);
             this.pbx3.Name = "pbx3";
             this.pbx3.Size = new System.Drawing.Size(107, 101);
             this.pbx3.TabIndex = 15;
             this.pbx3.TabStop = false;
             // 
+            // btnPlayAgain
+            // 
+            this.btnPlayAgain.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayAgain.Location = new System.Drawing.Point(248, 249);
+            this.btnPlayAgain.Name = "btnPlayAgain";
+            this.btnPlayAgain.Size = new System.Drawing.Size(169, 36);
+            this.btnPlayAgain.TabIndex = 16;
+            this.btnPlayAgain.Text = "Play Again";
+            this.btnPlayAgain.UseVisualStyleBackColor = true;
+            // 
             // Play
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 336);
+            this.ClientSize = new System.Drawing.Size(477, 352);
+            this.Controls.Add(this.btnPlayAgain);
             this.Controls.Add(this.pbx3);
             this.Controls.Add(this.pbx2);
             this.Controls.Add(this.pbx1);
@@ -110,6 +122,7 @@ namespace Mystery_Boxes_Game
             this.Controls.Add(this.lblHeading);
             this.Name = "Play";
             this.Text = "Mystery Box Game";
+            this.Load += new System.EventHandler(this.Play_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbx1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx3)).EndInit();
@@ -126,5 +139,6 @@ namespace Mystery_Boxes_Game
         private System.Windows.Forms.PictureBox pbx1;
         private System.Windows.Forms.PictureBox pbx2;
         private System.Windows.Forms.PictureBox pbx3;
+        private System.Windows.Forms.Button btnPlayAgain;
     }
 }

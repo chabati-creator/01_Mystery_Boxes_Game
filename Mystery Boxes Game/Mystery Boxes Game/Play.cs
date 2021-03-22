@@ -25,18 +25,24 @@ namespace Mystery_Boxes_Game
             List<int> boxValues = new List<int>();
             boxValues = p.OpenBoxes();
 
-            pbx1.Image = Image.FromFile($"../Images/{t}{boxValues[0]}");
-            pbx2.Image = Image.FromFile($"../Images/{t}{boxValues[1]}");
-            pbx3.Image = Image.FromFile($"../Images/{t}{boxValues[2]}");
+            pbx1.Image = Image.FromFile($"../Images/{t}{boxValues[0]}.gif");
+            pbx2.Image = Image.FromFile($"../Images/{t}{boxValues[1]}.gif");
+            pbx3.Image = Image.FromFile($"../Images/{t}{boxValues[2]}.gif");
 
+            string name = p.name;
+            lblHeading.Text = $"Congratulations {name}!!!";
+            lblInstruction.Text = "Click the 'Play again' button to play another round";
 
-            //string message = mb.OpenBox();
+            btnPlayAgain.Visible = true;
+         
+
+            //string message = "...";
             //string caption = "Mystery Boxes Game";
 
             //MessageBoxButtons buttons = MessageBoxButtons.OK;
             //DialogResult result;
 
-            // Displays the MessageBox which inlcudes the message and caption. 
+            //// Displays the MessageBox which inlcudes the message and caption. 
             //result = MessageBox.Show(message, caption, buttons);
 
 
@@ -45,6 +51,11 @@ namespace Mystery_Boxes_Game
             //Start window = new Start(mb);
             //window.FormClosed += (s, args) => this.Close();
             //window.Show();
+        }
+
+        private void Play_Load(object sender, EventArgs e)
+        {
+            btnPlayAgain.Visible = false;
         }
     }
 }

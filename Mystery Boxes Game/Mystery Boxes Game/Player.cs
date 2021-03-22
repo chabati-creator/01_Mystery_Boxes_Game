@@ -7,7 +7,7 @@ namespace Mystery_Boxes_Game
     public class Player
     {
         private int amount;
-        private string name;
+        public string name;
         private MysteryBox [,] rounds = new MysteryBox [50,3];
         private int roundCounter = 0;
 
@@ -16,7 +16,6 @@ namespace Mystery_Boxes_Game
         {
             name = n;
             amount = a;
-            System.Diagnostics.Debug.WriteLine(name+" "+amount);
         }
 
         public void BuyBoxes(int t)
