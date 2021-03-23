@@ -37,6 +37,7 @@ namespace Mystery_Boxes_Game
             this.lblInstruction = new System.Windows.Forms.Label();
             this.btnMed = new System.Windows.Forms.Button();
             this.btnHigh = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,11 +134,22 @@ namespace Mystery_Boxes_Game
             this.btnHigh.UseVisualStyleBackColor = true;
             this.btnHigh.Click += new System.EventHandler(this.btnHigh_Click);
             // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(113, 323);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(115, 40);
+            this.btnHelp.TabIndex = 8;
+            this.btnHelp.Text = "Help / Rules";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 334);
+            this.ClientSize = new System.Drawing.Size(489, 396);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnHigh);
             this.Controls.Add(this.btnMed);
             this.Controls.Add(this.lblInstruction);
@@ -164,6 +176,7 @@ namespace Mystery_Boxes_Game
         private System.Windows.Forms.Label lblInstruction;
         private System.Windows.Forms.Button btnMed;
         private System.Windows.Forms.Button btnHigh;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
 

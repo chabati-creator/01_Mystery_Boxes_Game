@@ -76,5 +76,13 @@ namespace Mystery_Boxes_Game
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Help window = new Help();
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
     }
 }

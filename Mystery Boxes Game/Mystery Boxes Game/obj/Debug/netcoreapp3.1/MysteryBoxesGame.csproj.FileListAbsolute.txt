@@ -17,3 +17,4 @@ C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Box
 C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery_Boxes_Game.Properties.Resources.resources
 C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery_Boxes_Game.GameStats.resources
 C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery_Boxes_Game.PlayAgain.resources
+C:\Users\batis\source\repos\Mystery Boxes Game\01_Mystery_Boxes_Game\Mystery Boxes Game\Mystery Boxes Game\obj\Debug\netcoreapp3.1\Mystery_Boxes_Game.Help.resources
