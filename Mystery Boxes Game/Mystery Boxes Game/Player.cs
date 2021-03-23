@@ -6,7 +6,7 @@ namespace Mystery_Boxes_Game
 {
     public class Player
     {
-        private int amount;
+        public int amount;
         public string name;
         private MysteryBox [,] rounds = new MysteryBox [50,3];
         private int roundCounter = 0;
@@ -20,6 +20,19 @@ namespace Mystery_Boxes_Game
 
         public void BuyBoxes(int t)
         {
+            if (t == 0)
+            {
+                amount -= 5;
+            }
+            else if (t == 1)
+            {
+                amount -= 10;
+            }
+            else
+            {
+                amount -= 15;
+            }    
+
             for (int i = 0; i < 3; i++)
             {
                 rounds[roundCounter, i] = new MysteryBox(t);
@@ -41,30 +54,40 @@ namespace Mystery_Boxes_Game
                 amount += value;
             }
 
-   
             return values;
         }
 
-        public string PlayerSummary()  //Method to show the player summary
+        public int TotalRoundWinnings()
         {
-            string summary;
+            List<int> values = new List<int>();
+            int totalwinnings = 0;
 
-            summary = "Name: " + name + "\n" + "Amount: $" + amount;  //Output the name and the amount to the user when the button is clicked
+            for (int i = 0; i < 3; i++)
+            {
+                values.Add(rounds[roundCounter - 1, i].getValue());
+            }
 
-            return summary;
+            foreach (int value in values)
+            {
+                totalwinnings += value;
+            }
+
+            return totalwinnings;
+
         }
 
-        //public float Amount()
+        public int GetAmount()
+        {
+
+            return amount;
+        }
+        //public string PlayerSummary()  //Method to show the player summary
         //{
-        //    int sumAmount = 0;
+        //    string summary;
 
-        //    foreach (int amount in amounts)
-        //    {
-        //        //Adding the amount won to the total amount
-        //        sumAmount += amount;
-        //    }
+        //    summary = "Name: " + name + "\n" + "Amount: $" + amount;  //Output the name and the amount to the user when the button is clicked
 
-        //    return sumAmount;
+        //    return summary;
         //}
 
     }

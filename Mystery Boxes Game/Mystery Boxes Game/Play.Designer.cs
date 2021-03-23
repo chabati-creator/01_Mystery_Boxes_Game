@@ -37,6 +37,7 @@ namespace Mystery_Boxes_Game
             this.pbx2 = new System.Windows.Forms.PictureBox();
             this.pbx3 = new System.Windows.Forms.PictureBox();
             this.btnPlayAgain = new System.Windows.Forms.Button();
+            this.btnGameStats = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbx1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx3)).BeginInit();
@@ -63,7 +64,7 @@ namespace Mystery_Boxes_Game
             // btnOpenBoxes
             // 
             this.btnOpenBoxes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnOpenBoxes.Location = new System.Drawing.Point(57, 249);
+            this.btnOpenBoxes.Location = new System.Drawing.Point(57, 245);
             this.btnOpenBoxes.Name = "btnOpenBoxes";
             this.btnOpenBoxes.Size = new System.Drawing.Size(169, 36);
             this.btnOpenBoxes.TabIndex = 10;
@@ -101,18 +102,30 @@ namespace Mystery_Boxes_Game
             // btnPlayAgain
             // 
             this.btnPlayAgain.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPlayAgain.Location = new System.Drawing.Point(248, 249);
+            this.btnPlayAgain.Location = new System.Drawing.Point(248, 245);
             this.btnPlayAgain.Name = "btnPlayAgain";
             this.btnPlayAgain.Size = new System.Drawing.Size(169, 36);
             this.btnPlayAgain.TabIndex = 16;
             this.btnPlayAgain.Text = "Play Again";
             this.btnPlayAgain.UseVisualStyleBackColor = true;
+            this.btnPlayAgain.Click += new System.EventHandler(this.btnPlayAgain_Click);
+            // 
+            // btnGameStats
+            // 
+            this.btnGameStats.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnGameStats.Location = new System.Drawing.Point(151, 295);
+            this.btnGameStats.Name = "btnGameStats";
+            this.btnGameStats.Size = new System.Drawing.Size(169, 36);
+            this.btnGameStats.TabIndex = 17;
+            this.btnGameStats.Text = "Game Statistics";
+            this.btnGameStats.UseVisualStyleBackColor = true;
             // 
             // Play
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(477, 352);
+            this.Controls.Add(this.btnGameStats);
             this.Controls.Add(this.btnPlayAgain);
             this.Controls.Add(this.pbx3);
             this.Controls.Add(this.pbx2);
@@ -140,5 +153,6 @@ namespace Mystery_Boxes_Game
         private System.Windows.Forms.PictureBox pbx2;
         private System.Windows.Forms.PictureBox pbx3;
         private System.Windows.Forms.Button btnPlayAgain;
+        private System.Windows.Forms.Button btnGameStats;
     }
 }

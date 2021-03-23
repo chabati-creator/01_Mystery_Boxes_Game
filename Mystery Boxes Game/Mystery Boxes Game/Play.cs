@@ -25,6 +25,7 @@ namespace Mystery_Boxes_Game
             List<int> boxValues = new List<int>();
             boxValues = p.OpenBoxes();
 
+            //Shows the images corresponding to the type of stake (Low, Medium, High) and the values
             pbx1.Image = Image.FromFile($"../Images/{t}{boxValues[0]}.gif");
             pbx2.Image = Image.FromFile($"../Images/{t}{boxValues[1]}.gif");
             pbx3.Image = Image.FromFile($"../Images/{t}{boxValues[2]}.gif");
@@ -34,7 +35,7 @@ namespace Mystery_Boxes_Game
             lblInstruction.Text = "Click the 'Play again' button to play another round";
 
             btnPlayAgain.Visible = true;
-         
+            btnOpenBoxes.Visible = false;
 
             //string message = "...";
             //string caption = "Mystery Boxes Game";
@@ -45,17 +46,21 @@ namespace Mystery_Boxes_Game
             //// Displays the MessageBox which inlcudes the message and caption. 
             //result = MessageBox.Show(message, caption, buttons);
 
-
-            //The Play Screen closes and the Start Screen Opens
-            //this.Hide();
-            //Start window = new Start(mb);
-            //window.FormClosed += (s, args) => this.Close();
-            //window.Show();
         }
 
         private void Play_Load(object sender, EventArgs e)
         {
             btnPlayAgain.Visible = false;
+            btnGameStats.Visible = false;
+        }
+
+        private void btnPlayAgain_Click(object sender, EventArgs e)
+        {
+            //The Start Screen closes and the Play screen opens
+            this.Hide();
+            PlayAgain window = new PlayAgain(p, t);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
         }
     }
 }

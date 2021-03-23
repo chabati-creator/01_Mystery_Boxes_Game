@@ -35,6 +35,8 @@ namespace Mystery_Boxes_Game
             this.txbName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblInstruction = new System.Windows.Forms.Label();
+            this.btnMed = new System.Windows.Forms.Button();
+            this.btnHigh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,9 +53,9 @@ namespace Mystery_Boxes_Game
             // btnLow
             // 
             this.btnLow.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLow.Location = new System.Drawing.Point(188, 278);
+            this.btnLow.Location = new System.Drawing.Point(41, 267);
             this.btnLow.Name = "btnLow";
-            this.btnLow.Size = new System.Drawing.Size(106, 40);
+            this.btnLow.Size = new System.Drawing.Size(115, 40);
             this.btnLow.TabIndex = 1;
             this.btnLow.Text = "Low ($5)";
             this.btnLow.UseVisualStyleBackColor = true;
@@ -109,11 +111,35 @@ namespace Mystery_Boxes_Game
             this.lblInstruction.Text = "Please enter your name and a dollar amount (between $5 and $50) in the boxes belo" +
     "w. Then choose the stakes. The higher the stakes, the more you can win!";
             // 
+            // btnMed
+            // 
+            this.btnMed.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMed.Location = new System.Drawing.Point(178, 267);
+            this.btnMed.Name = "btnMed";
+            this.btnMed.Size = new System.Drawing.Size(115, 40);
+            this.btnMed.TabIndex = 6;
+            this.btnMed.Text = "Medium ($10)";
+            this.btnMed.UseVisualStyleBackColor = true;
+            this.btnMed.Click += new System.EventHandler(this.btnMed_Click);
+            // 
+            // btnHigh
+            // 
+            this.btnHigh.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHigh.Location = new System.Drawing.Point(313, 267);
+            this.btnHigh.Name = "btnHigh";
+            this.btnHigh.Size = new System.Drawing.Size(115, 40);
+            this.btnHigh.TabIndex = 7;
+            this.btnHigh.Text = "High ($15)";
+            this.btnHigh.UseVisualStyleBackColor = true;
+            this.btnHigh.Click += new System.EventHandler(this.btnHigh_Click);
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 364);
+            this.ClientSize = new System.Drawing.Size(489, 334);
+            this.Controls.Add(this.btnHigh);
+            this.Controls.Add(this.btnMed);
             this.Controls.Add(this.lblInstruction);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txbName);
@@ -136,6 +162,8 @@ namespace Mystery_Boxes_Game
         private System.Windows.Forms.TextBox txbName;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblInstruction;
+        private System.Windows.Forms.Button btnMed;
+        private System.Windows.Forms.Button btnHigh;
     }
 }
 
