@@ -10,9 +10,29 @@ namespace Mystery_Boxes_Game
 {
     public partial class GameStats : Form
     {
-        public GameStats()
+        Player p;
+        int t;
+        public GameStats(Player p, int t)
         {
+            this.p = p;
+            this.t = t;
             InitializeComponent();
+        }
+
+        private void btnDismiss_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Play window = new Play(p, t);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
+
+        private void GameStats_Load(object sender, EventArgs e)
+        {
+            lblGameStats.Text = "Starting Balance: $ ## \n\n" +
+                                "Current Balance: $" + p.GetAmount() + "\n\n"+
+                                "Amount Won / Lost: $ ## << Label will change to 'Won / Lost' >> \n" +
+                                "Rounds Played: # ";
         }
     }
 }

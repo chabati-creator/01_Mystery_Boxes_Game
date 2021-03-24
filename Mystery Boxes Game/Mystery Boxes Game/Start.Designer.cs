@@ -53,7 +53,7 @@ namespace Mystery_Boxes_Game
             // 
             // btnLow
             // 
-            this.btnLow.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLow.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLow.Location = new System.Drawing.Point(41, 267);
             this.btnLow.Name = "btnLow";
             this.btnLow.Size = new System.Drawing.Size(115, 40);
@@ -114,10 +114,10 @@ namespace Mystery_Boxes_Game
             // 
             // btnMed
             // 
-            this.btnMed.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMed.Location = new System.Drawing.Point(178, 267);
+            this.btnMed.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMed.Location = new System.Drawing.Point(166, 267);
             this.btnMed.Name = "btnMed";
-            this.btnMed.Size = new System.Drawing.Size(115, 40);
+            this.btnMed.Size = new System.Drawing.Size(140, 40);
             this.btnMed.TabIndex = 6;
             this.btnMed.Text = "Medium ($10)";
             this.btnMed.UseVisualStyleBackColor = true;
@@ -125,8 +125,8 @@ namespace Mystery_Boxes_Game
             // 
             // btnHigh
             // 
-            this.btnHigh.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnHigh.Location = new System.Drawing.Point(313, 267);
+            this.btnHigh.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHigh.Location = new System.Drawing.Point(314, 267);
             this.btnHigh.Name = "btnHigh";
             this.btnHigh.Size = new System.Drawing.Size(115, 40);
             this.btnHigh.TabIndex = 7;
@@ -136,6 +136,7 @@ namespace Mystery_Boxes_Game
             // 
             // btnHelp
             // 
+            this.btnHelp.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHelp.Location = new System.Drawing.Point(113, 323);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(115, 40);

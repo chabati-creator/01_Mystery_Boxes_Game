@@ -113,12 +113,13 @@ namespace Mystery_Boxes_Game
             // btnGameStats
             // 
             this.btnGameStats.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGameStats.Location = new System.Drawing.Point(151, 295);
+            this.btnGameStats.Location = new System.Drawing.Point(155, 294);
             this.btnGameStats.Name = "btnGameStats";
             this.btnGameStats.Size = new System.Drawing.Size(169, 36);
             this.btnGameStats.TabIndex = 17;
             this.btnGameStats.Text = "Game Statistics";
             this.btnGameStats.UseVisualStyleBackColor = true;
+            this.btnGameStats.Click += new System.EventHandler(this.btnGameStats_Click);
             // 
             // Play
             // 

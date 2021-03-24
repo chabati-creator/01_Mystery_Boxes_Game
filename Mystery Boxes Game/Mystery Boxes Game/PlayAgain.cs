@@ -31,7 +31,7 @@ namespace Mystery_Boxes_Game
             p.BuyBoxes(0);
 
             this.Hide();
-            Play window = new Play(p, t);
+            Play window = new Play(p, 0);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -41,7 +41,7 @@ namespace Mystery_Boxes_Game
             p.BuyBoxes(1);
 
             this.Hide();
-            Play window = new Play(p, t);
+            Play window = new Play(p, 1);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
@@ -51,7 +51,7 @@ namespace Mystery_Boxes_Game
             p.BuyBoxes(2);
 
             this.Hide();
-            Play window = new Play(p, t);
+            Play window = new Play(p, 2);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }

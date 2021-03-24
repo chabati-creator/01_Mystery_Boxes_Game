@@ -48,8 +48,8 @@ namespace Mystery_Boxes_Game
             // 
             // btnLow
             // 
-            this.btnLow.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLow.Location = new System.Drawing.Point(57, 132);
+            this.btnLow.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLow.Location = new System.Drawing.Point(34, 132);
             this.btnLow.Name = "btnLow";
             this.btnLow.Size = new System.Drawing.Size(115, 40);
             this.btnLow.TabIndex = 3;
@@ -67,10 +67,10 @@ namespace Mystery_Boxes_Game
             // 
             // btnMed
             // 
-            this.btnMed.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMed.Location = new System.Drawing.Point(189, 132);
+            this.btnMed.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMed.Location = new System.Drawing.Point(166, 132);
             this.btnMed.Name = "btnMed";
-            this.btnMed.Size = new System.Drawing.Size(115, 40);
+            this.btnMed.Size = new System.Drawing.Size(135, 40);
             this.btnMed.TabIndex = 8;
             this.btnMed.Text = "Medium ($10)";
             this.btnMed.UseVisualStyleBackColor = true;
@@ -78,7 +78,7 @@ namespace Mystery_Boxes_Game
             // 
             // btnHigh
             // 
-            this.btnHigh.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHigh.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHigh.Location = new System.Drawing.Point(318, 132);
             this.btnHigh.Name = "btnHigh";
             this.btnHigh.Size = new System.Drawing.Size(115, 40);
@@ -91,7 +91,7 @@ namespace Mystery_Boxes_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 197);
+            this.ClientSize = new System.Drawing.Size(489, 241);
             this.Controls.Add(this.btnHigh);
             this.Controls.Add(this.btnMed);
             this.Controls.Add(this.lblInfo);

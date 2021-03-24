@@ -51,7 +51,6 @@ namespace Mystery_Boxes_Game
         private void Play_Load(object sender, EventArgs e)
         {
             btnPlayAgain.Visible = false;
-            btnGameStats.Visible = false;
         }
 
         private void btnPlayAgain_Click(object sender, EventArgs e)
@@ -59,6 +58,14 @@ namespace Mystery_Boxes_Game
             //The Start Screen closes and the Play screen opens
             this.Hide();
             PlayAgain window = new PlayAgain(p, t);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
+
+        private void btnGameStats_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GameStats window = new GameStats(p,t);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }
