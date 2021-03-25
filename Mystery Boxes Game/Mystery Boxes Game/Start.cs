@@ -24,7 +24,6 @@ namespace Mystery_Boxes_Game
             string name = txbName.Text;
 
             int amount = Convert.ToInt32(nudAmount.Value);
-
             p = new Player(name, amount);
 
             p.BuyBoxes(0);

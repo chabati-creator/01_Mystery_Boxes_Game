@@ -91,7 +91,7 @@ namespace Mystery_Boxes_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 241);
+            this.ClientSize = new System.Drawing.Size(489, 197);
             this.Controls.Add(this.btnHigh);
             this.Controls.Add(this.btnMed);
             this.Controls.Add(this.lblInfo);

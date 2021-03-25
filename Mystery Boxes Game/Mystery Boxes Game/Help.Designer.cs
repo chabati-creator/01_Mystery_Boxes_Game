@@ -32,7 +32,7 @@ namespace Mystery_Boxes_Game
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Help));
             this.lbIHelp = new System.Windows.Forms.Label();
             this.lblHeading = new System.Windows.Forms.Label();
-            this.btnDismiss = new System.Windows.Forms.Button();
+            this.btnStartDismiss = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbIHelp
@@ -53,23 +53,23 @@ namespace Mystery_Boxes_Game
             this.lblHeading.TabIndex = 8;
             this.lblHeading.Text = "Help / Payout Schedule";
             // 
-            // btnDismiss
+            // btnStartDismiss
             // 
-            this.btnDismiss.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDismiss.Location = new System.Drawing.Point(180, 451);
-            this.btnDismiss.Name = "btnDismiss";
-            this.btnDismiss.Size = new System.Drawing.Size(115, 40);
-            this.btnDismiss.TabIndex = 9;
-            this.btnDismiss.Text = "Dismiss";
-            this.btnDismiss.UseVisualStyleBackColor = true;
-            this.btnDismiss.Click += new System.EventHandler(this.btnDismiss_Click);
+            this.btnStartDismiss.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnStartDismiss.Location = new System.Drawing.Point(180, 451);
+            this.btnStartDismiss.Name = "btnStartDismiss";
+            this.btnStartDismiss.Size = new System.Drawing.Size(115, 40);
+            this.btnStartDismiss.TabIndex = 9;
+            this.btnStartDismiss.Text = "Dismiss";
+            this.btnStartDismiss.UseVisualStyleBackColor = true;
+            this.btnStartDismiss.Click += new System.EventHandler(this.btnStartDismiss_Click);
             // 
             // Help
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 530);
-            this.Controls.Add(this.btnDismiss);
+            this.Controls.Add(this.btnStartDismiss);
             this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.lbIHelp);
             this.Name = "Help";
@@ -83,6 +83,6 @@ namespace Mystery_Boxes_Game
 
         private System.Windows.Forms.Label lbIHelp;
         private System.Windows.Forms.Label lblHeading;
-        private System.Windows.Forms.Button btnDismiss;
+        private System.Windows.Forms.Button btnStartDismiss;
     }
 }

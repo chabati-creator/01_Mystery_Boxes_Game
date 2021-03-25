@@ -10,12 +10,13 @@ namespace Mystery_Boxes_Game
 {
     public partial class Help : Form
     {
+
         public Help()
         {
             InitializeComponent();
         }
 
-        private void btnDismiss_Click(object sender, EventArgs e)
+        private void btnStartDismiss_Click(object sender, EventArgs e)
         {
             this.Hide();
             Start window = new Start();

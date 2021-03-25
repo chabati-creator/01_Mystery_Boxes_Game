@@ -6,6 +6,7 @@ namespace Mystery_Boxes_Game
 {
     public class Player
     {
+        public int startAmount;
         public int amount;
         public string name;
         private MysteryBox [,] rounds = new MysteryBox [50,3];
@@ -15,7 +16,8 @@ namespace Mystery_Boxes_Game
         public Player(string n, int a)
         {
             name = n;
-            amount = a;
+            startAmount = a;
+            amount = startAmount;
         }
 
         public void BuyBoxes(int t)
@@ -71,24 +73,22 @@ namespace Mystery_Boxes_Game
             {
                 totalwinnings += value;
             }
-
             return totalwinnings;
-
         }
 
         public int GetAmount()
         {
-
             return amount;
         }
-        //public string PlayerSummary()  //Method to show the player summary
-        //{
-        //    string summary;
 
-        //    summary = "Name: " + name + "\n" + "Amount: $" + amount;  //Output the name and the amount to the user when the button is clicked
+        public int GetStartAmount()
+        {
+            return startAmount;
+        }
 
-        //    return summary;
-        //}
-
+        public int GetRounds()
+        {
+            return roundCounter;
+        }
     }
 }

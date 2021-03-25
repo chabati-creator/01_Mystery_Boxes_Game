@@ -35,6 +35,7 @@ namespace Mystery_Boxes_Game
             lblInstruction.Text = "Click the 'Play again' button to play another round";
 
             btnPlayAgain.Visible = true;
+            btnGameStats.Visible = false;
             btnOpenBoxes.Visible = false;
 
             //string message = "...";
@@ -55,7 +56,7 @@ namespace Mystery_Boxes_Game
 
         private void btnPlayAgain_Click(object sender, EventArgs e)
         {
-            //The Start Screen closes and the Play screen opens
+            //The Play Screen closes and the Play Again screen opens
             this.Hide();
             PlayAgain window = new PlayAgain(p, t);
             window.FormClosed += (s, args) => this.Close();
@@ -65,7 +66,7 @@ namespace Mystery_Boxes_Game
         private void btnGameStats_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GameStats window = new GameStats(p,t);
+            GameStats window = new GameStats(p, t);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }

@@ -29,10 +29,10 @@ namespace Mystery_Boxes_Game
 
         private void GameStats_Load(object sender, EventArgs e)
         {
-            lblGameStats.Text = "Starting Balance: $ ## \n\n" +
+            lblGameStats.Text = "Starting Balance: $" + p.GetStartAmount() + "\n\n" +
                                 "Current Balance: $" + p.GetAmount() + "\n\n"+
                                 "Amount Won / Lost: $ ## << Label will change to 'Won / Lost' >> \n" +
-                                "Rounds Played: # ";
+                                "Rounds Played: " + p.GetRounds();
         }
     }
 }
