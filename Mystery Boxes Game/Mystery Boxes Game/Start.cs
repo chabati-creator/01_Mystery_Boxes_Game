@@ -19,14 +19,14 @@ namespace Mystery_Boxes_Game
             InitializeComponent();
         }
 
-        private void btnLow_Click(object sender, EventArgs e)
+        private void btnLow_Click(object sender, EventArgs e) //Low Button
         {
-            string name = txbName.Text;
+            string name = txbName.Text;     //Get the user's name
 
-            int amount = Convert.ToInt32(nudAmount.Value);
+            int amount = Convert.ToInt32(nudAmount.Value); //Get the user's starting amount/balance and name which is passed through Player constructor
             p = new Player(name, amount);
 
-            p.BuyBoxes(0);
+            p.BuyBoxes(0); //Set the type to 0 for Low
 
             //string caption = "Mystery Boxes Game";
 
@@ -35,10 +35,8 @@ namespace Mystery_Boxes_Game
 
             //// Displays the MessageBox which inlcudes the message and caption. 
             //result = MessageBox.Show(message, caption, buttons);
-
-            //The Start Screen closes and the Play screen opens
             
-            this.Hide();
+            this.Hide();       //The Start Screen closes and the Play screen opens
             Play window = new Play(p,0);
             window.FormClosed += (s, args) => this.Close();
             window.Show();

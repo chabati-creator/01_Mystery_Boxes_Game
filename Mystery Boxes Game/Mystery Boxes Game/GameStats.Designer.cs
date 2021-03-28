@@ -29,6 +29,7 @@ namespace Mystery_Boxes_Game
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameStats));
             this.lblHeading = new System.Windows.Forms.Label();
             this.lblGameStats = new System.Windows.Forms.Label();
             this.btnDismiss = new System.Windows.Forms.Button();
@@ -49,15 +50,14 @@ namespace Mystery_Boxes_Game
             // 
             this.lblGameStats.Location = new System.Drawing.Point(32, 65);
             this.lblGameStats.Name = "lblGameStats";
-            this.lblGameStats.Size = new System.Drawing.Size(442, 196);
+            this.lblGameStats.Size = new System.Drawing.Size(442, 220);
             this.lblGameStats.TabIndex = 8;
-            this.lblGameStats.Text = "Starting Balance: $ ##\r\n\r\nCurrent Balance: $ ##\r\n\r\nAmount Won / Lost: $ ## << Lab" +
-    "el will change\r\nto \'Won / Lost\'>>\r\n\r\nRounds Played: #";
+            this.lblGameStats.Text = resources.GetString("lblGameStats.Text");
             // 
             // btnDismiss
             // 
             this.btnDismiss.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDismiss.Location = new System.Drawing.Point(288, 245);
+            this.btnDismiss.Location = new System.Drawing.Point(285, 296);
             this.btnDismiss.Name = "btnDismiss";
             this.btnDismiss.Size = new System.Drawing.Size(115, 40);
             this.btnDismiss.TabIndex = 10;
@@ -68,7 +68,7 @@ namespace Mystery_Boxes_Game
             // btnExport
             // 
             this.btnExport.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExport.Location = new System.Drawing.Point(129, 245);
+            this.btnExport.Location = new System.Drawing.Point(128, 296);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(115, 40);
             this.btnExport.TabIndex = 11;
@@ -79,7 +79,7 @@ namespace Mystery_Boxes_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 312);
+            this.ClientSize = new System.Drawing.Size(518, 348);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnDismiss);
             this.Controls.Add(this.lblGameStats);

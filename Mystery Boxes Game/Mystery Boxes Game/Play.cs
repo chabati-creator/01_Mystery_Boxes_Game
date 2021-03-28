@@ -12,12 +12,38 @@ namespace Mystery_Boxes_Game
     {
         Player p;
         int t;
+        
         MysteryBox mb = new MysteryBox();
         public Play(Player p, int t)
         {
             this.p = p;
             this.t = t;
+
             InitializeComponent();
+
+            if (p.GetRoundOpened() == true)
+            {
+                List<int> boxValues = new List<int>();
+                boxValues = p.OpenBoxes();
+
+                //Shows the images corresponding to the type of stake (Low, Medium, High) and the values
+                pbx1.Image = Image.FromFile($"../Images/{t}{boxValues[0]}.gif");
+                pbx2.Image = Image.FromFile($"../Images/{t}{boxValues[1]}.gif");
+                pbx3.Image = Image.FromFile($"../Images/{t}{boxValues[2]}.gif");
+
+                string name = p.name;
+                lblHeading.Text = $"Congratulations {name}!!!";
+                lblInstruction.Text = "Click the 'Play Again' button to play another round";
+
+
+                btnOpenBoxes.Visible = false;
+            }
+            else
+            {
+                btnPlayAgain.Visible = false;
+                btnGameStats.Visible = false;
+            }
+            
         }
 
         private void btnOpenBoxes_Click(object sender, EventArgs e)
@@ -32,10 +58,10 @@ namespace Mystery_Boxes_Game
 
             string name = p.name;
             lblHeading.Text = $"Congratulations {name}!!!";
-            lblInstruction.Text = "Click the 'Play again' button to play another round";
+            lblInstruction.Text = "Click the 'Play Again' button to play another round";
 
             btnPlayAgain.Visible = true;
-            btnGameStats.Visible = false;
+            btnGameStats.Visible = true;
             btnOpenBoxes.Visible = false;
 
             //string message = "...";
@@ -51,7 +77,8 @@ namespace Mystery_Boxes_Game
 
         private void Play_Load(object sender, EventArgs e)
         {
-            btnPlayAgain.Visible = false;
+            //btnPlayAgain.Visible = false;
+            //btnGameStats.Visible = false;
         }
 
         private void btnPlayAgain_Click(object sender, EventArgs e)

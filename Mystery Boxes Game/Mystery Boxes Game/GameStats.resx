@@ -57,4 +57,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblGameStats.Text" xml:space="preserve">
+    <value>Starting Balance: $ ##
+
+Current Balance: $ ##
+
+Amount Won / Lost: $ ## &lt;&lt; Label will change
+to 'Won / Lost'&gt;&gt;
+
+Rounds Played: #
+
+Please use the 'Export' button to generate a text file showing your statistics and the results  of each round that you played.</value>
+  </data>
 </root>

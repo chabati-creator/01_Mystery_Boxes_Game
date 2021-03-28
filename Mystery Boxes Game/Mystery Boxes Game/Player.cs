@@ -11,10 +11,12 @@ namespace Mystery_Boxes_Game
         public string name;
         private MysteryBox [,] rounds = new MysteryBox [50,3];
         private int roundCounter = 0;
+        public bool roundOpened;
 
         //The constuctor is a method that allows you to create an object of the class
         public Player(string n, int a)
         {
+            //Setting name to n and startAmount to a. While amount which is to be used throughout = startAmount
             name = n;
             startAmount = a;
             amount = startAmount;
@@ -40,6 +42,8 @@ namespace Mystery_Boxes_Game
                 rounds[roundCounter, i] = new MysteryBox(t);
             }
             roundCounter++;
+            roundOpened = false;
+
         }
 
         public List<int> OpenBoxes()
@@ -51,11 +55,15 @@ namespace Mystery_Boxes_Game
                 values.Add(rounds[roundCounter - 1, i].getValue());
             }
 
-            foreach (int value in values)
+            if (roundOpened == false)
             {
-                amount += value;
+                foreach (int value in values)
+                {
+                    amount += value;
+                }
+                roundOpened = true;
             }
-
+            
             return values;
         }
 
@@ -89,6 +97,11 @@ namespace Mystery_Boxes_Game
         public int GetRounds()
         {
             return roundCounter;
+        }
+
+        public bool GetRoundOpened()
+        {
+            return roundOpened;
         }
     }
 }
