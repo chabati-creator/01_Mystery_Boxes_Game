@@ -15,71 +15,114 @@ namespace Mystery_Boxes_Game
         Player p;
         public Start()
         {
-            
             InitializeComponent();
         }
 
         private void btnLow_Click(object sender, EventArgs e) //Low Button
         {
-            string name = txbName.Text;     //Get the user's name
+            string name = txbName.Text;                     //Get the user's name
 
-            int amount = Convert.ToInt32(nudAmount.Value); //Get the user's starting amount/balance and name which is passed through Player constructor
-            p = new Player(name, amount);
+            if (txbName.Text == "")                         //Check that name textbox is not blank. If the name textbox is blank then...
+            {
+                txbName.BackColor = Color.LightPink;            //the background colour changes to light pink
+                string caption = "Error";
+                string message = "The name textbox cannot be empty. Please enter player's name";   //Shows the error message to the user
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
 
-            p.BuyBoxes(0); //Set the type to 0 for Low
+                //Displays the MessageBox which inlcudes the message and caption. 
+                result = MessageBox.Show(message, caption, buttons);
+                txbName.Focus();
+            }
+            else
+            {
+                int amount = Convert.ToInt32(nudAmount.Value);  //Get the user's starting amount/balance and name which is passed through Player constructor
 
-            //string caption = "Mystery Boxes Game";
+                if (amount < 10)
+                {
+                    btnHigh.Enabled = false;
+                }
 
-            //MessageBoxButtons buttons = MessageBoxButtons.OK;
-            //DialogResult result;
+                p = new Player(name, amount);
 
-            //// Displays the MessageBox which inlcudes the message and caption. 
-            //result = MessageBox.Show(message, caption, buttons);
+                p.BuyBoxes(0);                                  //Set the type to 0 for Low stake
+
+                this.Hide();                                    //The Start screen closes
+                Play window = new Play(p, 0);                    //Play screen opens passing the p(name and amount) and the type = 0 for Low stake
+                window.FormClosed += (s, args) => this.Close();
+                window.Show();
+            }
+     
+        }
+
+        private void btnMed_Click(object sender, EventArgs e)  //Medium Button
+        {
+            string name = txbName.Text;
+
+            if (txbName.Text == "")
+            {
+                txbName.BackColor = Color.LightPink;        
+                string caption = "Error";
+                string message = "The Name textbox cannot be empty. Please enter player's name"; 
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                //Displays the MessageBox which inlcudes the message and caption. 
+                result = MessageBox.Show(message, caption, buttons);
+                txbName.Focus();
+            }
+            else
+            {
+                int amount = Convert.ToInt32(nudAmount.Value);
+                p = new Player(name, amount);
+
+                p.BuyBoxes(1);                                  // Set the type to 1 for Medium stake
+
+                this.Hide();
+                Play window = new Play(p, 1);                   //Play screen opens passing the p(name and amount) and the type = 1 for Medium stake
+                window.FormClosed += (s, args) => this.Close();
+                window.Show();
+            }
             
-            this.Hide();       //The Start Screen closes and the Play screen opens
-            Play window = new Play(p,0);
-            window.FormClosed += (s, args) => this.Close();
-            window.Show();
         }
 
-        private void btnMed_Click(object sender, EventArgs e)
+        private void btnHigh_Click(object sender, EventArgs e)  //High Button
         {
             string name = txbName.Text;
 
-            int amount = Convert.ToInt32(nudAmount.Value);
+            if (txbName.Text == "")
+            {
+                txbName.BackColor = Color.LightPink;   
+                string caption = "Error";
+                string message = "The Name textbox cannot be empty. Please enter player's name"; 
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
 
-            p = new Player(name, amount);
+                //Displays the MessageBox which inlcudes the message and caption. 
+                result = MessageBox.Show(message, caption, buttons);
+                txbName.Focus();
+            }
+            else
+            {
+                int amount = Convert.ToInt32(nudAmount.Value);
+                p = new Player(name, amount);
 
-            p.BuyBoxes(1);
+                p.BuyBoxes(2);                                  // Set the type to 2 for High stake
 
-            this.Hide();
-            Play window = new Play(p, 1);
-            window.FormClosed += (s, args) => this.Close();
-            window.Show();
+                this.Hide();
+                Play window = new Play(p, 2);                   //Play screen opens passing the p(name and amount) and the type = 2 for High stake
+                window.FormClosed += (s, args) => this.Close();
+                window.Show();
+            }
+
         }
 
-        private void btnHigh_Click(object sender, EventArgs e)
+        private void btnHelp_Click(object sender, EventArgs e)  //Help Button
         {
-            string name = txbName.Text;
-
-            int amount = Convert.ToInt32(nudAmount.Value);
-
-            p = new Player(name, amount);
-
-            p.BuyBoxes(2);
-
-            this.Hide();
-            Play window = new Play(p, 2);
+            this.Hide();                                //The Start screen closes
+            Help window = new Help();                   
             window.FormClosed += (s, args) => this.Close();
-            window.Show();
-        }
-
-        private void btnHelp_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Help window = new Help();
-            window.FormClosed += (s, args) => this.Close();
-            window.Show();
+            window.Show();                              //Help screen opens to show the user relevant information and instructions
         }
     }
 }

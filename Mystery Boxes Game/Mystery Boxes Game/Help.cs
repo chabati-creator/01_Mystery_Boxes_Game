@@ -16,10 +16,11 @@ namespace Mystery_Boxes_Game
             InitializeComponent();
         }
 
-        private void btnStartDismiss_Click(object sender, EventArgs e)
+        private void btnStartDismiss_Click(object sender, EventArgs e) //Dismiss Button
         {
-            this.Hide();
-            Start window = new Start();
+            
+            this.Hide();                                        //The Help screen closes
+            Start window = new Start();                         //Start screen re-opens for the user 
             window.FormClosed += (s, args) => this.Close();
             window.Show();
         }

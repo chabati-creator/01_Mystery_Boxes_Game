@@ -22,27 +22,27 @@ namespace Mystery_Boxes_Game
             amount = startAmount;
         }
 
-        public void BuyBoxes(int t)
+        public void BuyBoxes(int t) //BuyBoxes method for calculating the amount based on the type of stake (Low,Med,High)
         {
             if (t == 0)
             {
-                amount -= 5;
+                amount -= 5;        //When type = 0 for Low then total current amount/balance - 5
             }
             else if (t == 1)
             {
-                amount -= 10;
+                amount -= 10;       //When type = 1 for Medium then the total current amount - 10
             }
             else
             {
-                amount -= 15;
+                amount -= 15;       //When type = 2 for High then total current amount - 15
             }    
 
             for (int i = 0; i < 3; i++)
             {
                 rounds[roundCounter, i] = new MysteryBox(t);
             }
-            roundCounter++;
-            roundOpened = false;
+            roundCounter++;         //The roundCounter increases by 1 for each round which is store in roundCounter
+            roundOpened = false;        //Setting the roundOpened to false as the 'OpenBoxes' button has not been clicked
 
         }
 
@@ -103,5 +103,10 @@ namespace Mystery_Boxes_Game
         {
             return roundOpened;
         }
+
+        //public bool GetNameEntered()
+        //{
+        //    return nameEntered;
+        //}
     }
 }

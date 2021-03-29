@@ -14,12 +14,10 @@ namespace Mystery_Boxes_Game
         [STAThread]
         static void Main()
         {
-            
-
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Start());
+            Application.Run(new Start());       //Start Window form appears first
         }
     }
 }
