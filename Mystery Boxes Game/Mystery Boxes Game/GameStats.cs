@@ -31,7 +31,6 @@ namespace Mystery_Boxes_Game
         {
             lblGameStats.Text = "Starting Balance: $" + p.GetStartAmount() + "\n\n" +
                                 "Current Balance: $" + p.GetAmount() + "\n\n"+
-                                "Amount Won / Lost: $ ## << Label will change to 'Won / Lost' >> \n" +
                                 "Rounds Played: " + p.GetRounds();
         }
     }

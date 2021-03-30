@@ -16,6 +16,8 @@ namespace Mystery_Boxes_Game
         public Start()
         {
             InitializeComponent();
+
+
         }
 
         private void btnLow_Click(object sender, EventArgs e) //Low Button
@@ -37,12 +39,11 @@ namespace Mystery_Boxes_Game
             else
             {
                 int amount = Convert.ToInt32(nudAmount.Value);  //Get the user's starting amount/balance and name which is passed through Player constructor
-
-                if (amount < 10)
+                
+                if (nudAmount.Value < 10)
                 {
                     btnHigh.Enabled = false;
                 }
-
                 p = new Player(name, amount);
 
                 p.BuyBoxes(0);                                  //Set the type to 0 for Low stake
