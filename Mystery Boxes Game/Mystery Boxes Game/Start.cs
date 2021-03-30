@@ -17,6 +17,27 @@ namespace Mystery_Boxes_Game
         {
             InitializeComponent();
 
+            btnMed.Enabled = false;
+            btnHigh.Enabled = false;
+
+        }
+
+        private void nudAmount_ValueChanged(object sender, EventArgs e)
+        {
+
+
+
+
+            if (nudAmount.Value >= 10)
+            {
+                btnMed.Enabled = true;
+            }
+            if (nudAmount.Value >= 15)
+            {
+
+                btnMed.Enabled = true;
+                btnHigh.Enabled = true;
+            }
 
         }
 
@@ -39,11 +60,7 @@ namespace Mystery_Boxes_Game
             else
             {
                 int amount = Convert.ToInt32(nudAmount.Value);  //Get the user's starting amount/balance and name which is passed through Player constructor
-                
-                if (nudAmount.Value < 10)
-                {
-                    btnHigh.Enabled = false;
-                }
+
                 p = new Player(name, amount);
 
                 p.BuyBoxes(0);                                  //Set the type to 0 for Low stake
@@ -125,5 +142,6 @@ namespace Mystery_Boxes_Game
             window.FormClosed += (s, args) => this.Close();
             window.Show();                              //Help screen opens to show the user relevant information and instructions
         }
+
     }
 }
