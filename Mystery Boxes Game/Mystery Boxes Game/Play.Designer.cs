@@ -63,13 +63,14 @@ namespace Mystery_Boxes_Game
             // 
             // btnOpenBoxes
             // 
-            this.btnOpenBoxes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnOpenBoxes.BackColor = System.Drawing.Color.Silver;
+            this.btnOpenBoxes.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnOpenBoxes.Location = new System.Drawing.Point(158, 246);
             this.btnOpenBoxes.Name = "btnOpenBoxes";
             this.btnOpenBoxes.Size = new System.Drawing.Size(169, 36);
             this.btnOpenBoxes.TabIndex = 10;
             this.btnOpenBoxes.Text = "Open Boxes";
-            this.btnOpenBoxes.UseVisualStyleBackColor = true;
+            this.btnOpenBoxes.UseVisualStyleBackColor = false;
             this.btnOpenBoxes.Click += new System.EventHandler(this.btnOpenBoxes_Click);
             // 
             // pbx1
@@ -101,24 +102,26 @@ namespace Mystery_Boxes_Game
             // 
             // btnPlayAgain
             // 
-            this.btnPlayAgain.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayAgain.BackColor = System.Drawing.Color.Silver;
+            this.btnPlayAgain.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnPlayAgain.Location = new System.Drawing.Point(248, 296);
             this.btnPlayAgain.Name = "btnPlayAgain";
             this.btnPlayAgain.Size = new System.Drawing.Size(169, 40);
             this.btnPlayAgain.TabIndex = 16;
             this.btnPlayAgain.Text = "Play Again";
-            this.btnPlayAgain.UseVisualStyleBackColor = true;
+            this.btnPlayAgain.UseVisualStyleBackColor = false;
             this.btnPlayAgain.Click += new System.EventHandler(this.btnPlayAgain_Click);
             // 
             // btnGameStats
             // 
-            this.btnGameStats.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnGameStats.BackColor = System.Drawing.Color.LightBlue;
+            this.btnGameStats.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGameStats.Location = new System.Drawing.Point(57, 298);
             this.btnGameStats.Name = "btnGameStats";
             this.btnGameStats.Size = new System.Drawing.Size(169, 36);
             this.btnGameStats.TabIndex = 19;
             this.btnGameStats.Text = "Game Statistics";
-            this.btnGameStats.UseVisualStyleBackColor = true;
+            this.btnGameStats.UseVisualStyleBackColor = false;
             this.btnGameStats.Click += new System.EventHandler(this.btnGameStats_Click);
             // 
             // Play

@@ -17,6 +17,15 @@ namespace Mystery_Boxes_Game
             this.p = p;
             this.t = t;
             InitializeComponent();
+
+            if (p.amount < 10)
+            {
+                btnMed.Enabled = false;
+            }
+            if (p.amount < 15)
+            {
+                btnHigh.Enabled = false;
+            }
         }
 
         private void PlayAgain_Load(object sender, EventArgs e)

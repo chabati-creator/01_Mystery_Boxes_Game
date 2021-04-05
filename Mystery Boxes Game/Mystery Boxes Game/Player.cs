@@ -84,6 +84,19 @@ namespace Mystery_Boxes_Game
             return totalwinnings;
         }
 
+        public string AmountWonLost()
+        {
+            if (startAmount > amount)
+            {
+                return "Amount Lost: $" + (startAmount - amount);
+            }
+            else
+            {
+                return "Amount Won: $" + (amount - startAmount);
+            }
+            
+        }
+
         public int GetAmount()
         {
             return amount;
@@ -104,9 +117,5 @@ namespace Mystery_Boxes_Game
             return roundOpened;
         }
 
-        //public bool GetNameEntered()
-        //{
-        //    return nameEntered;
-        //}
     }
 }

@@ -55,13 +55,14 @@ namespace Mystery_Boxes_Game
             // 
             // btnStartDismiss
             // 
-            this.btnStartDismiss.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnStartDismiss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnStartDismiss.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnStartDismiss.Location = new System.Drawing.Point(180, 451);
             this.btnStartDismiss.Name = "btnStartDismiss";
             this.btnStartDismiss.Size = new System.Drawing.Size(115, 40);
             this.btnStartDismiss.TabIndex = 9;
             this.btnStartDismiss.Text = "Dismiss";
-            this.btnStartDismiss.UseVisualStyleBackColor = true;
+            this.btnStartDismiss.UseVisualStyleBackColor = false;
             this.btnStartDismiss.Click += new System.EventHandler(this.btnStartDismiss_Click);
             // 
             // Help

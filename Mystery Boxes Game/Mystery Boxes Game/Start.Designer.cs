@@ -48,19 +48,20 @@ namespace Mystery_Boxes_Game
             this.lblHeading.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblHeading.Location = new System.Drawing.Point(41, 27);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(400, 37);
+            this.lblHeading.Size = new System.Drawing.Size(392, 37);
             this.lblHeading.TabIndex = 0;
-            this.lblHeading.Text = "****Mystery Box Game****";
+            this.lblHeading.Text = "----Mystery Box Game----";
             // 
             // btnLow
             // 
+            this.btnLow.BackColor = System.Drawing.Color.Orange;
             this.btnLow.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLow.Location = new System.Drawing.Point(41, 264);
             this.btnLow.Name = "btnLow";
             this.btnLow.Size = new System.Drawing.Size(115, 40);
             this.btnLow.TabIndex = 1;
             this.btnLow.Text = "Low ($5)";
-            this.btnLow.UseVisualStyleBackColor = true;
+            this.btnLow.UseVisualStyleBackColor = false;
             this.btnLow.Click += new System.EventHandler(this.btnLow_Click);
             // 
             // nudAmount
@@ -118,35 +119,39 @@ namespace Mystery_Boxes_Game
             // 
             // btnMed
             // 
+            this.btnMed.BackColor = System.Drawing.Color.Yellow;
             this.btnMed.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMed.Location = new System.Drawing.Point(166, 264);
             this.btnMed.Name = "btnMed";
             this.btnMed.Size = new System.Drawing.Size(140, 40);
             this.btnMed.TabIndex = 6;
             this.btnMed.Text = "Medium ($10)";
-            this.btnMed.UseVisualStyleBackColor = true;
+            this.btnMed.UseVisualStyleBackColor = false;
             this.btnMed.Click += new System.EventHandler(this.btnMed_Click);
             // 
             // btnHigh
             // 
+            this.btnHigh.BackColor = System.Drawing.Color.LightGreen;
             this.btnHigh.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHigh.Location = new System.Drawing.Point(314, 264);
             this.btnHigh.Name = "btnHigh";
             this.btnHigh.Size = new System.Drawing.Size(115, 40);
             this.btnHigh.TabIndex = 7;
             this.btnHigh.Text = "High ($15)";
-            this.btnHigh.UseVisualStyleBackColor = true;
+            this.btnHigh.UseVisualStyleBackColor = false;
             this.btnHigh.Click += new System.EventHandler(this.btnHigh_Click);
             // 
             // btnHelp
             // 
+            this.btnHelp.BackColor = System.Drawing.Color.Silver;
             this.btnHelp.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHelp.Location = new System.Drawing.Point(41, 319);
+            this.btnHelp.ForeColor = System.Drawing.Color.Black;
+            this.btnHelp.Location = new System.Drawing.Point(180, 322);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(115, 40);
             this.btnHelp.TabIndex = 8;
-            this.btnHelp.Text = "Help / Rules";
-            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Text = "How to Play";
+            this.btnHelp.UseVisualStyleBackColor = false;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // label1
@@ -155,15 +160,15 @@ namespace Mystery_Boxes_Game
             this.label1.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(40, 365);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 37);
+            this.label1.Size = new System.Drawing.Size(402, 37);
             this.label1.TabIndex = 9;
-            this.label1.Text = "********************************";
+            this.label1.Text = "-----------------------------------\r\n";
             // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 396);
+            this.ClientSize = new System.Drawing.Size(489, 411);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnHigh);

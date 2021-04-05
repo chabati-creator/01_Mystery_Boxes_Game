@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lbIHelp.Text" xml:space="preserve">
-    <value>Choose an amount to play with and then choose the stakes.
+    <value>Enter your name and then choose an amount to play with and then choose the stakes.
 Higher stakes cost more per round but you can win more as well.
 
 When you enter the play area, you will see three mystery boxes. To reveal the contents of the boxes, click the 'Open Boxes' button. 

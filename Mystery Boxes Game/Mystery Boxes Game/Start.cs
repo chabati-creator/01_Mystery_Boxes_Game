@@ -19,23 +19,24 @@ namespace Mystery_Boxes_Game
 
             btnMed.Enabled = false;
             btnHigh.Enabled = false;
-
         }
 
         private void nudAmount_ValueChanged(object sender, EventArgs e)
         {
-
-
-
-
+            if (nudAmount.Value <= 10)
+            {
+                btnMed.Enabled = false;
+            }
             if (nudAmount.Value >= 10)
             {
                 btnMed.Enabled = true;
+                if (nudAmount.Value <= 15)
+                {
+                    btnHigh.Enabled = false;
+                }
             }
             if (nudAmount.Value >= 15)
             {
-
-                btnMed.Enabled = true;
                 btnHigh.Enabled = true;
             }
 

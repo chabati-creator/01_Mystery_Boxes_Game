@@ -56,24 +56,26 @@ namespace Mystery_Boxes_Game
             // 
             // btnDismiss
             // 
-            this.btnDismiss.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDismiss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnDismiss.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDismiss.Location = new System.Drawing.Point(285, 296);
             this.btnDismiss.Name = "btnDismiss";
             this.btnDismiss.Size = new System.Drawing.Size(115, 40);
             this.btnDismiss.TabIndex = 10;
             this.btnDismiss.Text = "Dismiss";
-            this.btnDismiss.UseVisualStyleBackColor = true;
+            this.btnDismiss.UseVisualStyleBackColor = false;
             this.btnDismiss.Click += new System.EventHandler(this.btnDismiss_Click);
             // 
             // btnExport
             // 
-            this.btnExport.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExport.BackColor = System.Drawing.Color.LightBlue;
+            this.btnExport.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnExport.Location = new System.Drawing.Point(128, 296);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(115, 40);
             this.btnExport.TabIndex = 11;
             this.btnExport.Text = "Export...";
-            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.UseVisualStyleBackColor = false;
             // 
             // GameStats
             // 

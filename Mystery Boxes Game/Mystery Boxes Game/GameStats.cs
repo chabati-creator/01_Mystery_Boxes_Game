@@ -31,7 +31,10 @@ namespace Mystery_Boxes_Game
         {
             lblGameStats.Text = "Starting Balance: $" + p.GetStartAmount() + "\n\n" +
                                 "Current Balance: $" + p.GetAmount() + "\n\n"+
-                                "Rounds Played: " + p.GetRounds();
+                                p.AmountWonLost() + "\n\n" +
+                                "Rounds Played: " + p.GetRounds() + "\n\n" +
+                                "Please use the 'Export' button to generate a text file showing your " +
+                                "statistics and the results  of each round that you played.";
         }
     }
 }

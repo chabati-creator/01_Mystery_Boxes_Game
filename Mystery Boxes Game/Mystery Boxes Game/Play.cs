@@ -21,6 +21,17 @@ namespace Mystery_Boxes_Game
 
             InitializeComponent();
 
+            
+            //if (p.amount < 5)
+            //{
+            //    btnPlayAgain.Enabled = false;
+            //}
+            //else
+            //{
+            //    btnPlayAgain.Enabled = true;
+            //}
+            
+
             if (p.GetRoundOpened() == true)
             {
                 List<int> boxValues = new List<int>();
@@ -37,6 +48,15 @@ namespace Mystery_Boxes_Game
 
 
                 btnOpenBoxes.Visible = false;
+
+                if (p.amount < 5)
+                {
+                    btnPlayAgain.Enabled = false;
+                }
+                else
+                {
+                    btnPlayAgain.Enabled = true;
+                }
             }
             else
             {
@@ -63,6 +83,15 @@ namespace Mystery_Boxes_Game
             btnPlayAgain.Visible = true;
             btnGameStats.Visible = true;
             btnOpenBoxes.Visible = false;
+
+            if (p.amount < 5)
+            {
+                btnPlayAgain.Enabled = false;
+            }
+            else
+            {
+                btnPlayAgain.Enabled = true;
+            }
 
             //string message = "...";
             //string caption = "Mystery Boxes Game";

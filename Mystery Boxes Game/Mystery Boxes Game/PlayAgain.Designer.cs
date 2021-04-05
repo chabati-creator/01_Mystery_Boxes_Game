@@ -48,13 +48,14 @@ namespace Mystery_Boxes_Game
             // 
             // btnLow
             // 
+            this.btnLow.BackColor = System.Drawing.Color.Orange;
             this.btnLow.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLow.Location = new System.Drawing.Point(34, 132);
             this.btnLow.Name = "btnLow";
             this.btnLow.Size = new System.Drawing.Size(115, 40);
             this.btnLow.TabIndex = 3;
             this.btnLow.Text = "Low ($5)";
-            this.btnLow.UseVisualStyleBackColor = true;
+            this.btnLow.UseVisualStyleBackColor = false;
             this.btnLow.Click += new System.EventHandler(this.btnLow_Click);
             // 
             // lblInfo
@@ -67,24 +68,26 @@ namespace Mystery_Boxes_Game
             // 
             // btnMed
             // 
+            this.btnMed.BackColor = System.Drawing.Color.Yellow;
             this.btnMed.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMed.Location = new System.Drawing.Point(166, 132);
             this.btnMed.Name = "btnMed";
             this.btnMed.Size = new System.Drawing.Size(135, 40);
             this.btnMed.TabIndex = 8;
             this.btnMed.Text = "Medium ($10)";
-            this.btnMed.UseVisualStyleBackColor = true;
+            this.btnMed.UseVisualStyleBackColor = false;
             this.btnMed.Click += new System.EventHandler(this.btnMed_Click);
             // 
             // btnHigh
             // 
+            this.btnHigh.BackColor = System.Drawing.Color.LightGreen;
             this.btnHigh.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHigh.Location = new System.Drawing.Point(318, 132);
             this.btnHigh.Name = "btnHigh";
             this.btnHigh.Size = new System.Drawing.Size(115, 40);
             this.btnHigh.TabIndex = 9;
             this.btnHigh.Text = "High ($15)";
-            this.btnHigh.UseVisualStyleBackColor = true;
+            this.btnHigh.UseVisualStyleBackColor = false;
             this.btnHigh.Click += new System.EventHandler(this.btnHigh_Click);
             // 
             // PlayAgain
