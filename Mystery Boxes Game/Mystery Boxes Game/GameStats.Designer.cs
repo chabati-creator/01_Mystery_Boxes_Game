@@ -40,7 +40,7 @@ namespace Mystery_Boxes_Game
             // 
             this.lblHeading.AutoSize = true;
             this.lblHeading.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHeading.Location = new System.Drawing.Point(32, 23);
+            this.lblHeading.Location = new System.Drawing.Point(32, 18);
             this.lblHeading.Name = "lblHeading";
             this.lblHeading.Size = new System.Drawing.Size(261, 37);
             this.lblHeading.TabIndex = 2;
@@ -76,6 +76,7 @@ namespace Mystery_Boxes_Game
             this.btnExport.TabIndex = 11;
             this.btnExport.Text = "Export...";
             this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // GameStats
             // 

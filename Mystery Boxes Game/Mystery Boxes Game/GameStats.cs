@@ -36,5 +36,13 @@ namespace Mystery_Boxes_Game
                                 "Please use the 'Export' button to generate a text file showing your " +
                                 "statistics and the results  of each round that you played.";
         }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Export window = new Export(p, t);
+            window.FormClosed += (s, args) => this.Close();
+            window.Show();
+        }
     }
 }
