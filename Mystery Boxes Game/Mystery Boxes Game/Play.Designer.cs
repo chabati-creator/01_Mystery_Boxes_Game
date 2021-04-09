@@ -48,11 +48,11 @@ namespace Mystery_Boxes_Game
             // 
             this.lblHeading.AutoSize = true;
             this.lblHeading.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHeading.Location = new System.Drawing.Point(50, 34);
+            this.lblHeading.Location = new System.Drawing.Point(53, 30);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(107, 37);
+            this.lblHeading.Size = new System.Drawing.Size(82, 37);
             this.lblHeading.TabIndex = 1;
-            this.lblHeading.Text = "Play...";
+            this.lblHeading.Text = "Play";
             // 
             // lblInstruction
             // 
@@ -67,7 +67,7 @@ namespace Mystery_Boxes_Game
             // 
             this.btnOpenBoxes.BackColor = System.Drawing.Color.Silver;
             this.btnOpenBoxes.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnOpenBoxes.Location = new System.Drawing.Point(154, 344);
+            this.btnOpenBoxes.Location = new System.Drawing.Point(154, 314);
             this.btnOpenBoxes.Name = "btnOpenBoxes";
             this.btnOpenBoxes.Size = new System.Drawing.Size(169, 36);
             this.btnOpenBoxes.TabIndex = 10;
@@ -106,7 +106,7 @@ namespace Mystery_Boxes_Game
             // 
             this.btnPlayAgain.BackColor = System.Drawing.Color.Silver;
             this.btnPlayAgain.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPlayAgain.Location = new System.Drawing.Point(244, 344);
+            this.btnPlayAgain.Location = new System.Drawing.Point(244, 314);
             this.btnPlayAgain.Name = "btnPlayAgain";
             this.btnPlayAgain.Size = new System.Drawing.Size(169, 36);
             this.btnPlayAgain.TabIndex = 16;
@@ -118,7 +118,7 @@ namespace Mystery_Boxes_Game
             // 
             this.btnGameStats.BackColor = System.Drawing.Color.LightBlue;
             this.btnGameStats.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGameStats.Location = new System.Drawing.Point(53, 344);
+            this.btnGameStats.Location = new System.Drawing.Point(53, 314);
             this.btnGameStats.Name = "btnGameStats";
             this.btnGameStats.Size = new System.Drawing.Size(169, 36);
             this.btnGameStats.TabIndex = 19;
@@ -131,7 +131,7 @@ namespace Mystery_Boxes_Game
             this.lblPayback.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPayback.Location = new System.Drawing.Point(126, 233);
             this.lblPayback.Name = "lblPayback";
-            this.lblPayback.Size = new System.Drawing.Size(222, 95);
+            this.lblPayback.Size = new System.Drawing.Size(222, 74);
             this.lblPayback.TabIndex = 20;
             this.lblPayback.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -139,7 +139,7 @@ namespace Mystery_Boxes_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 392);
+            this.ClientSize = new System.Drawing.Size(477, 366);
             this.Controls.Add(this.lblPayback);
             this.Controls.Add(this.btnGameStats);
             this.Controls.Add(this.btnPlayAgain);

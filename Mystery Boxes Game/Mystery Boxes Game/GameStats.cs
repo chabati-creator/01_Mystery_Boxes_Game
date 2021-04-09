@@ -25,16 +25,18 @@ namespace Mystery_Boxes_Game
             Play window = new Play(p, t);
             window.FormClosed += (s, args) => this.Close();
             window.Show();
+
         }
 
         private void GameStats_Load(object sender, EventArgs e)
         {
-            lblGameStats.Text = "Starting Balance: $" + p.GetStartAmount() + "\n\n" +
+            lblGameStats.Text = "Here are your Game Statistics" + "\n\n" +
+                                "Starting Balance: $" + p.GetStartAmount() + "\n\n" +
                                 "Current Balance: $" + p.GetAmount() + "\n\n"+
                                 p.AmountWonLost() + "\n\n" +
                                 "Rounds Played: " + p.GetRounds() + "\n\n" +
                                 "Please use the 'Export' button to generate a text file showing your " +
-                                "statistics and the results  of each round that you played.";
+                                "game statistics and the results of each round that you played.";
         }
 
         private void btnExport_Click(object sender, EventArgs e)

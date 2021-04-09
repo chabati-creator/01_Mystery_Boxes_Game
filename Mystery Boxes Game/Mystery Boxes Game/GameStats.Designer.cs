@@ -50,7 +50,7 @@ namespace Mystery_Boxes_Game
             // 
             this.lblGameStats.Location = new System.Drawing.Point(32, 65);
             this.lblGameStats.Name = "lblGameStats";
-            this.lblGameStats.Size = new System.Drawing.Size(442, 220);
+            this.lblGameStats.Size = new System.Drawing.Size(442, 247);
             this.lblGameStats.TabIndex = 8;
             this.lblGameStats.Text = resources.GetString("lblGameStats.Text");
             // 
@@ -58,7 +58,7 @@ namespace Mystery_Boxes_Game
             // 
             this.btnDismiss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnDismiss.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDismiss.Location = new System.Drawing.Point(285, 296);
+            this.btnDismiss.Location = new System.Drawing.Point(285, 315);
             this.btnDismiss.Name = "btnDismiss";
             this.btnDismiss.Size = new System.Drawing.Size(115, 40);
             this.btnDismiss.TabIndex = 10;
@@ -70,7 +70,7 @@ namespace Mystery_Boxes_Game
             // 
             this.btnExport.BackColor = System.Drawing.Color.LightBlue;
             this.btnExport.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExport.Location = new System.Drawing.Point(128, 296);
+            this.btnExport.Location = new System.Drawing.Point(128, 315);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(115, 40);
             this.btnExport.TabIndex = 11;
@@ -82,7 +82,7 @@ namespace Mystery_Boxes_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 348);
+            this.ClientSize = new System.Drawing.Size(518, 376);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnDismiss);
             this.Controls.Add(this.lblGameStats);
