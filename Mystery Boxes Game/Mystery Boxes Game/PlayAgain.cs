@@ -32,7 +32,8 @@ namespace Mystery_Boxes_Game
         {
 
             lblInfo.Text = "Payback Amount: $" + p.TotalRoundWinnings() + "\n" +
-                           "Current Balance: $" + p.GetAmount();
+                           "Current Balance: $" + p.GetAmount() + "\n" +
+                           "Rounds Played: " + p.GetRounds();
         }
 
         private void btnLow_Click(object sender, EventArgs e)

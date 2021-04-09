@@ -6,9 +6,9 @@ namespace Mystery_Boxes_Game
 {
     public class MysteryBox
     {
-        private List<int> LOW = new List<int>() { 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 5, 5, 5};
-        private List<int> MEDIUM = new List<int>() { 0, 0, 0, 2, 2, 2, 4, 4, 10, 10};
-        private List<int> HIGH = new List<int>() { 0, 0, 0, 3, 3, 3, 3, 6, 6, 15};
+        private List<int> LOW = new List<int>() { 0, 0, 1, 1, 1, 1, 2, 2, 2, 5};
+        private List<int> MEDIUM = new List<int>() { 0, 0, 2, 2, 2, 2, 4, 4, 4, 10};
+        private List<int> HIGH = new List<int>() { 0, 0, 3, 3, 3, 3, 6, 6, 6, 15};
 
         public int value;
 
@@ -22,7 +22,7 @@ namespace Mystery_Boxes_Game
             if (t == 0)
             {
                 Random randint = new Random();
-                int index = randint.Next(0, 15);
+                int index = randint.Next(0, 10);
                 value = LOW[index];
             }
             else if (t == 1)

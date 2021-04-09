@@ -42,9 +42,9 @@ namespace Mystery_Boxes_Game
             this.lblHeading.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblHeading.Location = new System.Drawing.Point(43, 29);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(145, 37);
+            this.lblHeading.Size = new System.Drawing.Size(118, 37);
             this.lblHeading.TabIndex = 3;
-            this.lblHeading.Text = "Export...";
+            this.lblHeading.Text = "Export";
             // 
             // lblExport
             // 

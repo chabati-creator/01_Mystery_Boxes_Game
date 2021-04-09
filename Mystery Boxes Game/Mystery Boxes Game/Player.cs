@@ -9,7 +9,7 @@ namespace Mystery_Boxes_Game
         public int startAmount;
         public int amount;
         public string name;
-        private MysteryBox [,] rounds = new MysteryBox [50,3];
+        private MysteryBox [,] rounds = new MysteryBox [60,3];
         private int roundCounter = 0;
         public bool roundOpened;
 
@@ -115,6 +115,22 @@ namespace Mystery_Boxes_Game
         public bool GetRoundOpened()
         {
             return roundOpened;
+        }
+        public int GameCost(int t)
+        {
+            int GameCost;
+            if (t == 0)
+            {
+                GameCost = 5;
+            }
+            else if (t == 1)
+            {
+                GameCost = 10;
+            }
+            else
+                GameCost = 15;
+
+            return GameCost;
         }
 
     }

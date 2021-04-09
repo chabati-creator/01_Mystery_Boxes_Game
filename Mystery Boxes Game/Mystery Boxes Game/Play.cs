@@ -45,13 +45,15 @@ namespace Mystery_Boxes_Game
                 string name = p.name;
                 lblHeading.Text = $"Congratulations {name}!!!";
                 lblInstruction.Text = "Click the 'Play Again' button to play another round";
-
+                lblPayback.Text = "Payback Amount: $" + p.TotalRoundWinnings();
 
                 btnOpenBoxes.Visible = false;
 
                 if (p.amount < 5)
                 {
                     btnPlayAgain.Enabled = false;
+
+                    
                 }
                 else
                 {
@@ -78,7 +80,10 @@ namespace Mystery_Boxes_Game
 
             string name = p.name;
             lblHeading.Text = $"Congratulations {name}!!!";
-            lblInstruction.Text = "Click the 'Play Again' button to play another round";
+            lblInstruction.Text = "Press <enter> or click the 'Play Again' button to play another round";
+            lblPayback.Text = "Game Cost: $" + p.GameCost(t) + "\n" + 
+                              "Payback Amount: $" + p.TotalRoundWinnings() + "\n" +
+                              "Current Balance: $" + p.GetAmount();
 
             btnPlayAgain.Visible = true;
             btnGameStats.Visible = true;
@@ -87,6 +92,19 @@ namespace Mystery_Boxes_Game
             if (p.amount < 5)
             {
                 btnPlayAgain.Enabled = false;
+
+                string message = "------------------------------------------------------------------------" + "\n" +
+                                 "Your current balance is less than the required amount to play the game." + "\n" +
+                                 "\t\t      Thank you for playing" + "\n" +
+                                 "\t\t ---- Mystery Box Game ----" + "\n" +
+                                 "------------------------------------------------------------------------";
+                string caption = "Game Over";
+
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                // Displays the MessageBox which inlcudes the message and caption. 
+                result = MessageBox.Show(message, caption, buttons);
             }
             else
             {

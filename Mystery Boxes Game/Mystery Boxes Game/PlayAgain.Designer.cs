@@ -50,7 +50,7 @@ namespace Mystery_Boxes_Game
             // 
             this.btnLow.BackColor = System.Drawing.Color.Orange;
             this.btnLow.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLow.Location = new System.Drawing.Point(34, 132);
+            this.btnLow.Location = new System.Drawing.Point(34, 161);
             this.btnLow.Name = "btnLow";
             this.btnLow.Size = new System.Drawing.Size(115, 40);
             this.btnLow.TabIndex = 3;
@@ -62,7 +62,7 @@ namespace Mystery_Boxes_Game
             // 
             this.lblInfo.Location = new System.Drawing.Point(45, 70);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(388, 42);
+            this.lblInfo.Size = new System.Drawing.Size(388, 73);
             this.lblInfo.TabIndex = 7;
             this.lblInfo.Text = "...";
             // 
@@ -70,7 +70,7 @@ namespace Mystery_Boxes_Game
             // 
             this.btnMed.BackColor = System.Drawing.Color.Yellow;
             this.btnMed.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMed.Location = new System.Drawing.Point(166, 132);
+            this.btnMed.Location = new System.Drawing.Point(166, 161);
             this.btnMed.Name = "btnMed";
             this.btnMed.Size = new System.Drawing.Size(135, 40);
             this.btnMed.TabIndex = 8;
@@ -82,7 +82,7 @@ namespace Mystery_Boxes_Game
             // 
             this.btnHigh.BackColor = System.Drawing.Color.LightGreen;
             this.btnHigh.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHigh.Location = new System.Drawing.Point(318, 132);
+            this.btnHigh.Location = new System.Drawing.Point(318, 161);
             this.btnHigh.Name = "btnHigh";
             this.btnHigh.Size = new System.Drawing.Size(115, 40);
             this.btnHigh.TabIndex = 9;
@@ -94,7 +94,7 @@ namespace Mystery_Boxes_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 197);
+            this.ClientSize = new System.Drawing.Size(489, 230);
             this.Controls.Add(this.btnHigh);
             this.Controls.Add(this.btnMed);
             this.Controls.Add(this.lblInfo);
