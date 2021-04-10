@@ -24,8 +24,6 @@ namespace Mystery_Boxes_Game
             lblPayback.Text = "Game Cost: $" + p.GameCost(t) + "\n" +
                               "How much will you win?";
 
-
-
             //if (p.amount < 5)
             //{
             //    btnPlayAgain.Enabled = false;
@@ -47,7 +45,15 @@ namespace Mystery_Boxes_Game
                 pbx3.Image = Image.FromFile($"../Images/{t}{boxValues[2]}.gif");
 
                 string name = p.name;
-                lblHeading.Text = $"Congratulations {name}!!!";
+                if (p.startAmount > p.amount)
+                {
+                    lblHeading.Text = $"Sorry {name}"; ;
+                }
+                else
+                {
+                    lblHeading.Text = $"Congratulations {name}!!!"; ;
+                }
+
                 lblInstruction.Text = "Press <enter> or click the 'Play Again' button to play another round";
                 lblPayback.Text = "Game Cost: $" + p.GameCost(t) + "\n" +
                               "Payback Amount: $" + p.TotalRoundWinnings() + "\n" +

@@ -33,7 +33,7 @@ namespace Mystery_Boxes_Game
             this.lblExport = new System.Windows.Forms.Label();
             this.btnExport = new System.Windows.Forms.Button();
             this.btnDismiss = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbExport = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblHeading
@@ -66,6 +66,7 @@ namespace Mystery_Boxes_Game
             this.btnExport.TabIndex = 12;
             this.btnExport.Text = "Save";
             this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // btnDismiss
             // 
@@ -79,21 +80,21 @@ namespace Mystery_Boxes_Game
             this.btnDismiss.UseVisualStyleBackColor = false;
             this.btnDismiss.Click += new System.EventHandler(this.btnDismiss_Click);
             // 
-            // textBox1
+            // txbExport
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(50, 158);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(341, 56);
-            this.textBox1.TabIndex = 14;
+            this.txbExport.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbExport.Location = new System.Drawing.Point(50, 158);
+            this.txbExport.Multiline = true;
+            this.txbExport.Name = "txbExport";
+            this.txbExport.Size = new System.Drawing.Size(341, 56);
+            this.txbExport.TabIndex = 14;
             // 
             // Export
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(461, 312);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbExport);
             this.Controls.Add(this.btnDismiss);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.lblExport);
@@ -111,6 +112,6 @@ namespace Mystery_Boxes_Game
         private System.Windows.Forms.Label lblExport;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnDismiss;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbExport;
     }
 }
