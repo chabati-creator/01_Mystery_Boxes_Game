@@ -50,7 +50,7 @@ namespace Mystery_Boxes_Game
             // 
             this.lblExport.Location = new System.Drawing.Point(43, 80);
             this.lblExport.Name = "lblExport";
-            this.lblExport.Size = new System.Drawing.Size(362, 75);
+            this.lblExport.Size = new System.Drawing.Size(372, 85);
             this.lblExport.TabIndex = 9;
             this.lblExport.Text = "Please enter the desired filename below. Your game statistics and round history w" +
     "ill be exported as a txt file and will appear in the same folder as this program" +
@@ -101,6 +101,7 @@ namespace Mystery_Boxes_Game
             this.Controls.Add(this.lblHeading);
             this.Name = "Export";
             this.Text = "Export";
+            this.Load += new System.EventHandler(this.Export_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,0 +1,110 @@
+Mystery Box Game Statistics:
+
+Player Name: Cb
+
+Starting Balance: $5
+
+Current Balance: $2
+
+Amount Lost: $3
+
+Rounds Played: 1
+Mystery Box Game Statistics:
+
+Player Name: cb
+
+Starting Balance: $5
+
+Current Balance: $11
+
+Amount Won: $6
+
+Rounds Played: 1
+Mystery Box Game Statistics:
+
+Player Name: cb
+
+Starting Balance: $5
+
+Current Balance: $5
+
+Amount Won: $0
+
+Rounds Played: 1
+Mystery Box Game Statistics:
+
+Player Name: cb
+
+Starting Balance: $5
+
+Current Balance: $4
+
+Amount Lost: $1
+
+Rounds Played: 1
+Mystery Box Game Statistics:
+
+Player Name: cb
+
+Starting Balance: $5
+
+Current Balance: $1
+
+Amount Lost: $4
+
+Rounds Played: 1
+Mystery Box Game Statistics:
+
+Player Name: cb
+
+Starting Balance: $5
+
+Current Balance: $3
+
+Amount Lost: $2
+
+Rounds Played: 1
+Mystery Box Game Statistics:
+
+Player Name: cb
+
+Starting Balance: $5
+
+Current Balance: $4
+
+Amount Lost: $1
+
+Rounds Played: 1
+Mystery Box Game Statistics:
+
+Player Name: cb
+
+Starting Balance: $5
+
+Current Balance: $4
+
+Amount Lost: $1
+
+Rounds Played: 1
+Mystery Box Game Statistics:
+
+Player Name: cb
+
+Starting Balance: $5
+
+Current Balance: $1
+
+Amount Lost: $4
+
+Rounds Played: 1
+Mystery Box Game Statistics:
+
+Player Name: f
+
+Starting Balance: $5
+
+Current Balance: $7
+
+Amount Won: $2
+
+Rounds Played: 1

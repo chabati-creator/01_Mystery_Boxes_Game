@@ -1,0 +1,7 @@
+Starting Balance: $5
+
+Current Balance: $5
+
+Amount Won: $0
+
+Rounds Played: 1

@@ -116,6 +116,11 @@ namespace Mystery_Boxes_Game
         {
             return roundOpened;
         }
+
+        public string GetName()
+        {
+            return name;
+        }
         public int GameCost(int t)
         {
             int GameCost;
